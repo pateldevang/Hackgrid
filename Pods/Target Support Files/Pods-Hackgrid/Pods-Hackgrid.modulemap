@@ -1,0 +1,6 @@
+framework module Pods_Hackgrid {
+  umbrella header "Pods-Hackgrid-umbrella.h"
+
+  export *
+  module * { export * }
+}

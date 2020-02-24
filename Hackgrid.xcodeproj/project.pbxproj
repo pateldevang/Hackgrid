@@ -12,9 +12,13 @@
 		77CFC1282403A4EC00449969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC1262403A4EC00449969 /* Main.storyboard */; };
 		77CFC12A2403A4EF00449969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC1292403A4EF00449969 /* Assets.xcassets */; };
 		77CFC12D2403A4EF00449969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC12B2403A4EF00449969 /* LaunchScreen.storyboard */; };
+		8B18285D1E165DD6E8B7475A /* Pods_Hackgrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B5612D17992B0094F5E1A55 /* Pods-Hackgrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackgrid.release.xcconfig"; path = "Target Support Files/Pods-Hackgrid/Pods-Hackgrid.release.xcconfig"; sourceTree = "<group>"; };
+		2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackgrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74A7B2C68F95F4865FF8CE33 /* Pods-Hackgrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackgrid.debug.xcconfig"; path = "Target Support Files/Pods-Hackgrid/Pods-Hackgrid.debug.xcconfig"; sourceTree = "<group>"; };
 		77CFC11F2403A4EC00449969 /* Hackgrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackgrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CFC1222403A4EC00449969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77CFC1242403A4EC00449969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B18285D1E165DD6E8B7475A /* Pods_Hackgrid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191649AF90D0DAAECCA92115 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74A7B2C68F95F4865FF8CE33 /* Pods-Hackgrid.debug.xcconfig */,
+				1B5612D17992B0094F5E1A55 /* Pods-Hackgrid.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1F44A73D0FA75BFC78342B7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77CFC1162403A4EC00449969 = {
 			isa = PBXGroup;
 			children = (
 				77CFC1212403A4EC00449969 /* Hackgrid */,
 				77CFC1202403A4EC00449969 /* Products */,
+				191649AF90D0DAAECCA92115 /* Pods */,
+				1F44A73D0FA75BFC78342B7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77CFC1312403A4EF00449969 /* Build configuration list for PBXNativeTarget "Hackgrid" */;
 			buildPhases = (
+				6D72FEC300107DCF1DD3F493 /* [CP] Check Pods Manifest.lock */,
 				77CFC11B2403A4EC00449969 /* Sources */,
 				77CFC11C2403A4EC00449969 /* Frameworks */,
 				77CFC11D2403A4EC00449969 /* Resources */,
+				74CCD5E29EC90C80F4EBB02F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D72FEC300107DCF1DD3F493 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackgrid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74CCD5E29EC90C80F4EBB02F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackgrid/Pods-Hackgrid-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackgrid/Pods-Hackgrid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77CFC11B2403A4EC00449969 /* Sources */ = {
@@ -280,6 +356,7 @@
 		};
 		77CFC1322403A4EF00449969 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A7B2C68F95F4865FF8CE33 /* Pods-Hackgrid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +374,7 @@
 		};
 		77CFC1332403A4EF00449969 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5612D17992B0094F5E1A55 /* Pods-Hackgrid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
