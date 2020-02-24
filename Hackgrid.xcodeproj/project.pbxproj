@@ -12,6 +12,9 @@
 		77CFC1282403A4EC00449969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC1262403A4EC00449969 /* Main.storyboard */; };
 		77CFC12A2403A4EF00449969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC1292403A4EF00449969 /* Assets.xcassets */; };
 		77CFC12D2403A4EF00449969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC12B2403A4EF00449969 /* LaunchScreen.storyboard */; };
+		77CFC1392403AA0C00449969 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1382403AA0C00449969 /* constants.swift */; };
+		77CFC13C2403AA9600449969 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC13B2403AA9600449969 /* Reachability.swift */; };
+		77CFC13F2403AAC900449969 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC13E2403AAC900449969 /* NetworkEngine.swift */; };
 		8B18285D1E165DD6E8B7475A /* Pods_Hackgrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,9 @@
 		77CFC1292403A4EF00449969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77CFC12C2403A4EF00449969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77CFC12E2403A4EF00449969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77CFC1382403AA0C00449969 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		77CFC13B2403AA9600449969 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		77CFC13E2403AAC900449969 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,6 @@
 				74A7B2C68F95F4865FF8CE33 /* Pods-Hackgrid.debug.xcconfig */,
 				1B5612D17992B0094F5E1A55 /* Pods-Hackgrid.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,14 +84,81 @@
 		77CFC1212403A4EC00449969 /* Hackgrid */ = {
 			isa = PBXGroup;
 			children = (
-				77CFC1222403A4EC00449969 /* AppDelegate.swift */,
-				77CFC1242403A4EC00449969 /* ViewController.swift */,
-				77CFC1262403A4EC00449969 /* Main.storyboard */,
-				77CFC1292403A4EF00449969 /* Assets.xcassets */,
-				77CFC12B2403A4EF00449969 /* LaunchScreen.storyboard */,
+				77CFC1402403AB2400449969 /* Extensions */,
+				77CFC13D2403AAB700449969 /* Networking */,
+				77CFC13A2403AA8500449969 /* Services */,
+				77CFC1372403A9E400449969 /* Models */,
+				77CFC1342403A97000449969 /* Views */,
+				77CFC1352403A97E00449969 /* Controllers */,
+				77CFC1362403A9C800449969 /* Helpers */,
 				77CFC12E2403A4EF00449969 /* Info.plist */,
 			);
 			path = Hackgrid;
+			sourceTree = "<group>";
+		};
+		77CFC1342403A97000449969 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77CFC1262403A4EC00449969 /* Main.storyboard */,
+				77CFC12B2403A4EF00449969 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77CFC1352403A97E00449969 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77CFC1242403A4EC00449969 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		77CFC1362403A9C800449969 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				77CFC1382403AA0C00449969 /* constants.swift */,
+				77CFC1222403A4EC00449969 /* AppDelegate.swift */,
+				77CFC1292403A4EF00449969 /* Assets.xcassets */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		77CFC1372403A9E400449969 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		77CFC13A2403AA8500449969 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				77CFC13B2403AA9600449969 /* Reachability.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		77CFC13D2403AAB700449969 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				77CFC13E2403AAC900449969 /* NetworkEngine.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		77CFC1402403AB2400449969 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77CFC1412403AB3F00449969 /* utils+Extensions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77CFC1412403AB3F00449969 /* utils+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "utils+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				77CFC1252403A4EC00449969 /* ViewController.swift in Sources */,
+				77CFC13F2403AAC900449969 /* NetworkEngine.swift in Sources */,
 				77CFC1232403A4EC00449969 /* AppDelegate.swift in Sources */,
+				77CFC13C2403AA9600449969 /* Reachability.swift in Sources */,
+				77CFC1392403AA0C00449969 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
