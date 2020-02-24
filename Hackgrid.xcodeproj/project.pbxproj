@@ -20,6 +20,7 @@
 		77CFC1472403ABB900449969 /* custom+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1462403ABB900449969 /* custom+Navigation.swift */; };
 		77CFC14A2403ABDC00449969 /* haptic+Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1492403ABDC00449969 /* haptic+Feedback.swift */; };
 		77CFC14C2403ABEE00449969 /* alert+Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC14B2403ABEE00449969 /* alert+Function.swift */; };
+		77CFC14E2403AD5800449969 /* statusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC14D2403AD5800449969 /* statusBarView.swift */; };
 		8B18285D1E165DD6E8B7475A /* Pods_Hackgrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		77CFC1462403ABB900449969 /* custom+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "custom+Navigation.swift"; sourceTree = "<group>"; };
 		77CFC1492403ABDC00449969 /* haptic+Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "haptic+Feedback.swift"; sourceTree = "<group>"; };
 		77CFC14B2403ABEE00449969 /* alert+Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "alert+Function.swift"; sourceTree = "<group>"; };
+		77CFC14D2403AD5800449969 /* statusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				77CFC13B2403AA9600449969 /* Reachability.swift */,
+				77CFC14D2403AD5800449969 /* statusBarView.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77CFC14C2403ABEE00449969 /* alert+Function.swift in Sources */,
+				77CFC14E2403AD5800449969 /* statusBarView.swift in Sources */,
 				77CFC1472403ABB900449969 /* custom+Navigation.swift in Sources */,
 				77CFC1432403AB8A00449969 /* keyboard+Hide.swift in Sources */,
 				77CFC1252403A4EC00449969 /* ViewController.swift in Sources */,
