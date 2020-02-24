@@ -15,6 +15,11 @@
 		77CFC1392403AA0C00449969 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1382403AA0C00449969 /* constants.swift */; };
 		77CFC13C2403AA9600449969 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC13B2403AA9600449969 /* Reachability.swift */; };
 		77CFC13F2403AAC900449969 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC13E2403AAC900449969 /* NetworkEngine.swift */; };
+		77CFC1432403AB8A00449969 /* keyboard+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1422403AB8A00449969 /* keyboard+Hide.swift */; };
+		77CFC1452403AB9E00449969 /* checkNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1442403AB9E00449969 /* checkNetwork.swift */; };
+		77CFC1472403ABB900449969 /* custom+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1462403ABB900449969 /* custom+Navigation.swift */; };
+		77CFC14A2403ABDC00449969 /* haptic+Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1492403ABDC00449969 /* haptic+Feedback.swift */; };
+		77CFC14C2403ABEE00449969 /* alert+Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC14B2403ABEE00449969 /* alert+Function.swift */; };
 		8B18285D1E165DD6E8B7475A /* Pods_Hackgrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +37,11 @@
 		77CFC1382403AA0C00449969 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		77CFC13B2403AA9600449969 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		77CFC13E2403AAC900449969 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		77CFC1422403AB8A00449969 /* keyboard+Hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "keyboard+Hide.swift"; sourceTree = "<group>"; };
+		77CFC1442403AB9E00449969 /* checkNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkNetwork.swift; sourceTree = "<group>"; };
+		77CFC1462403ABB900449969 /* custom+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "custom+Navigation.swift"; sourceTree = "<group>"; };
+		77CFC1492403ABDC00449969 /* haptic+Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "haptic+Feedback.swift"; sourceTree = "<group>"; };
+		77CFC14B2403ABEE00449969 /* alert+Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "alert+Function.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +159,7 @@
 		77CFC1402403AB2400449969 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				77CFC1482403ABCC00449969 /* alertNhaptic+Extensions */,
 				77CFC1412403AB3F00449969 /* utils+Extensions */,
 			);
 			path = Extensions;
@@ -157,8 +168,20 @@
 		77CFC1412403AB3F00449969 /* utils+Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				77CFC1422403AB8A00449969 /* keyboard+Hide.swift */,
+				77CFC1442403AB9E00449969 /* checkNetwork.swift */,
+				77CFC1462403ABB900449969 /* custom+Navigation.swift */,
 			);
 			path = "utils+Extensions";
+			sourceTree = "<group>";
+		};
+		77CFC1482403ABCC00449969 /* alertNhaptic+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77CFC1492403ABDC00449969 /* haptic+Feedback.swift */,
+				77CFC14B2403ABEE00449969 /* alert+Function.swift */,
+			);
+			path = "alertNhaptic+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CFC14C2403ABEE00449969 /* alert+Function.swift in Sources */,
+				77CFC1472403ABB900449969 /* custom+Navigation.swift in Sources */,
+				77CFC1432403AB8A00449969 /* keyboard+Hide.swift in Sources */,
 				77CFC1252403A4EC00449969 /* ViewController.swift in Sources */,
+				77CFC1452403AB9E00449969 /* checkNetwork.swift in Sources */,
 				77CFC13F2403AAC900449969 /* NetworkEngine.swift in Sources */,
+				77CFC14A2403ABDC00449969 /* haptic+Feedback.swift in Sources */,
 				77CFC1232403A4EC00449969 /* AppDelegate.swift in Sources */,
 				77CFC13C2403AA9600449969 /* Reachability.swift in Sources */,
 				77CFC1392403AA0C00449969 /* constants.swift in Sources */,
