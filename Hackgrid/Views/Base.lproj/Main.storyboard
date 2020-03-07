@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ds2-sQ-8FI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-198" y="125"/>
+            <point key="canvasLocation" x="-242" y="167"/>
         </scene>
         <!--Beverages-->
         <scene sceneID="pSE-d1-xiE">
@@ -35,7 +35,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Hyj-gJ-piI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Beverages" id="GiC-at-2Do"/>
+                    <tabBarItem key="tabBarItem" title="Beverages" image="Tab 2" id="GiC-at-2Do"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTy-Ep-lTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aUr-Yv-oa7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Queries" id="RGV-BU-CkK"/>
+                    <tabBarItem key="tabBarItem" title="Queries" image="Tab 3" id="RGV-BU-CkK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YII-qo-qZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lYx-J1-qmr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Timeline" id="j7o-BM-aV4"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="Tab 1" id="j7o-BM-aV4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJH-K1-CZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +83,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="47w-xl-x3U"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Information" id="Ajl-fw-4RI"/>
+                    <tabBarItem key="tabBarItem" title="Information" image="Tab 5" id="Ajl-fw-4RI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFf-qM-okO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,7 +99,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KF2-g3-z63"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notification" id="C1y-lC-gyz"/>
+                    <tabBarItem key="tabBarItem" title="Notification" image="Tab 4" id="C1y-lC-gyz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEF-no-wyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,4 +127,11 @@
             <point key="canvasLocation" x="750" y="275"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tab 1" width="20" height="16"/>
+        <image name="Tab 2" width="16" height="22"/>
+        <image name="Tab 3" width="18" height="18"/>
+        <image name="Tab 4" width="18" height="20"/>
+        <image name="Tab 5" width="20" height="20"/>
+    </resources>
 </document>
