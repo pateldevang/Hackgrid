@@ -106,6 +106,7 @@
 				77CFC1342403A97000449969 /* Views */,
 				77CFC1352403A97E00449969 /* Controllers */,
 				77CFC13A2403AA8500449969 /* Services */,
+				77D6353924138187009DB468 /* Fonts */,
 				77CFC1362403A9C800449969 /* Helpers */,
 				77CFC12E2403A4EF00449969 /* Info.plist */,
 			);
@@ -199,6 +200,13 @@
 				77CFC1512403E11700449969 /* HackgridLogger.swift */,
 			);
 			path = "Debug+Extenstion";
+			sourceTree = "<group>";
+		};
+		77D6353924138187009DB468 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
