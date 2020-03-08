@@ -76,6 +76,9 @@
                         <viewLayoutGuide key="safeArea" id="aUr-Yv-oa7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Queries" image="Tab 3" id="RGV-BU-CkK"/>
+                    <connections>
+                        <outlet property="queriesTextView" destination="gX7-b0-pRC" id="anB-D8-7Tr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YII-qo-qZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

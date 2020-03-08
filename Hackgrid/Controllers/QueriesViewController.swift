@@ -11,6 +11,8 @@ import UIKit
 class QueriesViewController: UIViewController {
 
     
+    @IBOutlet weak var queriesTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
