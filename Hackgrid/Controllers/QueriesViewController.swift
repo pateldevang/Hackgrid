@@ -11,18 +11,19 @@ import UIKit
 class QueriesViewController: UIViewController, UITextViewDelegate {
 
     
+    //MARK: - Outlets
     @IBOutlet weak var queriesTextView: UITextView!
     @IBOutlet weak var postButton: UIButton!
     
+    //MARK:- viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
         queriesTextViewSetup()
     }
     
     
-    //MARK :- UITextViewDelegates
+    //MARK:- UITextViewDelegate Methods
     
     func queriesTextViewSetup(){
         queriesTextView.delegate = self
@@ -46,5 +47,10 @@ class QueriesViewController: UIViewController, UITextViewDelegate {
             textView.text = "Type your query here."
             textView.textColor = UIColor.darkGray
         }
+    }
+    
+    //MARK:- post button clicked
+    @IBAction func postButtonClicked(_ sender: UIButton) {
+        //add code here
     }
 }
