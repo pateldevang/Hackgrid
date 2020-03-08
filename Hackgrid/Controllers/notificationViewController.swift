@@ -10,12 +10,14 @@ import UIKit
 
 class notificationViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
-    // To be removed later
+    //MARK: - To be removed later
     var notificationsArrray : [String] = ["You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :("]
 
     //MARK: - Outlets
     @IBOutlet weak var notificationTableView: UITableView!
     
+    
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -34,6 +36,7 @@ class notificationViewController: UIViewController, UITableViewDelegate,UITableV
         let notificationCell = notificationTableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell") as? NotificationTableViewCell
         
         notificationCell?.notificationLabel.text = notificationsArrray[indexPath.row]
+        
         return notificationCell!
     }
 }

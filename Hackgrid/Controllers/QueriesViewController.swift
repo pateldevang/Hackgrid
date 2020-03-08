@@ -15,6 +15,7 @@ class QueriesViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var queriesTextView: UITextView!
     @IBOutlet weak var postButton: UIButton!
     
+    
     //MARK:- viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +25,13 @@ class QueriesViewController: UIViewController, UITextViewDelegate {
     
     
     //MARK:- UITextViewDelegate Methods
-    
     func queriesTextViewSetup(){
         queriesTextView.delegate = self
         queriesTextView.text = "Type your query here."
         queriesTextView.textColor = UIColor.darkGray
         queriesTextView.layer.cornerRadius = 9
     }
+    
     
     // remove placeholder
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -41,6 +42,7 @@ class QueriesViewController: UIViewController, UITextViewDelegate {
         }
     }
     
+    
     // add placeholder
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text == ""{
@@ -48,6 +50,7 @@ class QueriesViewController: UIViewController, UITextViewDelegate {
             textView.textColor = UIColor.darkGray
         }
     }
+    
     
     //MARK:- post button clicked
     @IBAction func postButtonClicked(_ sender: UIButton) {
