@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QueriesViewController: UIViewController {
+class QueriesViewController: UIViewController, UITextViewDelegate {
 
     
     @IBOutlet weak var queriesTextView: UITextView!
@@ -16,8 +16,20 @@ class QueriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        queriesTextView.delegate = self
+        queriesTextView.text = "Type your query here."
+        queriesTextView.textColor = UIColor.darkGray
     }
-        
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == "Type your query here." {
+            textView.text = ""
+            textView.textColor = UIColor.black
+            textView.textColor = UIColor.black
+        }
+    }
+    
+
     /*
     // MARK: - Navigation
 
