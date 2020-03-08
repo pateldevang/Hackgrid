@@ -20,6 +20,7 @@ class NotificationTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+            // notificationLabel.padding
         // Configure the view for the selected state
        // notificationLabel.numberOfLines = infin
     }

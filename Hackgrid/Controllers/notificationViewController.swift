@@ -10,7 +10,7 @@ import UIKit
 
 class notificationViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
-    var a = ["You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :("]
+    var a = ["You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :("]
 
     //MARK: - Outlets
     @IBOutlet weak var notificationTableView: UITableView!
@@ -18,6 +18,8 @@ class notificationViewController: UIViewController, UITableViewDelegate,UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        notificationTableView.rowHeight = UITableView.automaticDimension
+        notificationTableView.estimatedRowHeight = 120.0
         // Do any additional setup after loading the view.
     }
     
@@ -32,13 +34,12 @@ class notificationViewController: UIViewController, UITableViewDelegate,UITableV
         let notificationCell = notificationTableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell") as? NotificationTableViewCell
         
         notificationCell?.notificationLabel.text = a[indexPath.row]
-        
         return notificationCell!
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
-    }
+    
+    
+    
     
 
     /*
