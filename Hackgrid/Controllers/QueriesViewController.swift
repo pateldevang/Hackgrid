@@ -10,11 +10,16 @@ import UIKit
 
 class QueriesViewController: UIViewController {
 
+    @IBOutlet weak var queriesTextField: UITextField!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        //navigationController?.navigationBar.prefersLargeTitles = true
         // Do any additional setup after loading the view.
     }
+    
+
     
 
     /*

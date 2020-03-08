@@ -46,10 +46,38 @@
                     <view key="view" contentMode="scaleToFill" id="3Ub-lj-1Zz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-E7-g2b">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title="Queries" id="Atb-hb-ydY"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your query here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IBz-jL-Kku">
+                                <rect key="frame" x="18" y="186" width="378" height="141"/>
+                                <color key="backgroundColor" red="0.9528579116" green="0.95299464460000005" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="Br9-qr-efP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wyH-E7-g2b" firstAttribute="top" secondItem="aUr-Yv-oa7" secondAttribute="top" id="1Ag-ki-49W"/>
+                            <constraint firstItem="wyH-E7-g2b" firstAttribute="leading" secondItem="aUr-Yv-oa7" secondAttribute="leading" id="RrQ-Fi-WjJ"/>
+                            <constraint firstItem="IBz-jL-Kku" firstAttribute="top" secondItem="wyH-E7-g2b" secondAttribute="bottom" constant="46" id="a0i-ma-5Gq"/>
+                            <constraint firstItem="aUr-Yv-oa7" firstAttribute="trailing" secondItem="wyH-E7-g2b" secondAttribute="trailing" id="bPw-Ch-IGM"/>
+                            <constraint firstItem="IBz-jL-Kku" firstAttribute="leading" secondItem="aUr-Yv-oa7" secondAttribute="leading" constant="18" id="fLh-kg-0Pn"/>
+                            <constraint firstItem="aUr-Yv-oa7" firstAttribute="trailing" secondItem="IBz-jL-Kku" secondAttribute="trailing" constant="18" id="x6d-8D-YTC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aUr-Yv-oa7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Queries" image="Tab 3" id="RGV-BU-CkK"/>
+                    <connections>
+                        <outlet property="queriesTextField" destination="IBz-jL-Kku" id="z0l-hM-wHV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YII-qo-qZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
