@@ -156,7 +156,7 @@
                                     <navigationItem title="Notification" id="EQh-vB-M1X"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N9D-oB-j6h">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N9D-oB-j6h">
                                 <rect key="frame" x="0.0" y="149" width="414" height="664"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -168,10 +168,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yit-g2-N8O">
-                                                    <rect key="frame" x="18" y="0.0" width="378" height="61"/>
+                                                    <rect key="frame" x="18" y="0.0" width="378" height="64"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5D-78-pGU">
-                                                            <rect key="frame" x="10" y="10" width="358" height="41"/>
+                                                            <rect key="frame" x="10" y="10" width="358" height="44"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.39996230599999999" green="0.40002411599999999" blue="0.39994883539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -201,7 +201,7 @@
                                                 <constraint firstItem="yit-g2-N8O" firstAttribute="top" secondItem="8lS-Ha-r2T" secondAttribute="top" id="1b4-5Q-Cih"/>
                                                 <constraint firstItem="yit-g2-N8O" firstAttribute="leading" secondItem="8lS-Ha-r2T" secondAttribute="leading" constant="18" id="XRz-AU-6XD"/>
                                                 <constraint firstAttribute="trailing" secondItem="yit-g2-N8O" secondAttribute="trailing" constant="18" id="xrz-Mw-5cm"/>
-                                                <constraint firstAttribute="bottom" secondItem="yit-g2-N8O" secondAttribute="bottom" constant="15" id="ybR-0O-tLz"/>
+                                                <constraint firstAttribute="bottom" secondItem="yit-g2-N8O" secondAttribute="bottom" constant="12" id="ybR-0O-tLz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

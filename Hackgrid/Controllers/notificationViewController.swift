@@ -10,46 +10,30 @@ import UIKit
 
 class notificationViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
-    var a = ["You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :("]
+    // To be removed later
+    var notificationsArrray : [String] = ["You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :("]
 
     //MARK: - Outlets
     @IBOutlet weak var notificationTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Do any additional setup after loading the view.
         notificationTableView.rowHeight = UITableView.automaticDimension
         notificationTableView.estimatedRowHeight = 120.0
-        // Do any additional setup after loading the view.
     }
     
     
     //MARK: - UITableView Delegate Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return a.count
+        return notificationsArrray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let notificationCell = notificationTableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell") as? NotificationTableViewCell
         
-        notificationCell?.notificationLabel.text = a[indexPath.row]
+        notificationCell?.notificationLabel.text = notificationsArrray[indexPath.row]
         return notificationCell!
     }
-    
-    
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
