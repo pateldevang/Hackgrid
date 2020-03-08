@@ -149,10 +149,48 @@
                     <view key="view" contentMode="scaleToFill" id="Lgl-FY-w4A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWR-Pv-M0q">
+                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title="Notification" id="EQh-vB-M1X"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N9D-oB-j6h">
+                                <rect key="frame" x="0.0" y="149" width="414" height="664"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="sJv-5Q-fwD">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sJv-5Q-fwD" id="8lS-Ha-r2T">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EOp-sE-WTn" id="pgF-f4-X5y"/>
+                                    <outlet property="delegate" destination="EOp-sE-WTn" id="6lg-3a-OTk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GWR-Pv-M0q" firstAttribute="top" secondItem="Lgl-FY-w4A" secondAttribute="top" constant="7" id="5vV-wA-a8v"/>
+                            <constraint firstItem="N9D-oB-j6h" firstAttribute="top" secondItem="GWR-Pv-M0q" secondAttribute="bottom" constant="46" id="Exl-vJ-s1d"/>
+                            <constraint firstItem="KF2-g3-z63" firstAttribute="bottom" secondItem="N9D-oB-j6h" secondAttribute="bottom" id="F1n-zn-EzQ"/>
+                            <constraint firstItem="GWR-Pv-M0q" firstAttribute="leading" secondItem="KF2-g3-z63" secondAttribute="leading" id="MfF-9M-pFV"/>
+                            <constraint firstItem="N9D-oB-j6h" firstAttribute="leading" secondItem="KF2-g3-z63" secondAttribute="leading" id="TUW-07-WzU"/>
+                            <constraint firstItem="KF2-g3-z63" firstAttribute="trailing" secondItem="GWR-Pv-M0q" secondAttribute="trailing" symbolic="YES" id="dzx-Ih-YnH"/>
+                            <constraint firstItem="KF2-g3-z63" firstAttribute="trailing" secondItem="N9D-oB-j6h" secondAttribute="trailing" id="iny-Fg-hQ1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KF2-g3-z63"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notification" image="Tab 4" id="C1y-lC-gyz"/>
+                    <connections>
+                        <outlet property="notificationTableView" destination="N9D-oB-j6h" id="Kbc-DC-2eD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEF-no-wyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

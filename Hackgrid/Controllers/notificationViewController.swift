@@ -8,12 +8,23 @@
 
 import UIKit
 
-class notificationViewController: UIViewController {
+class notificationViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
+    //MARK: - Outlets
+    @IBOutlet weak var notificationTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    //MARK: - UITableView Delegate Methods
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
     
 
