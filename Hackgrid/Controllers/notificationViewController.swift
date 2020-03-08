@@ -10,7 +10,7 @@ import UIKit
 
 class notificationViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
-    
+    var a = ["You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :("]
 
     //MARK: - Outlets
     @IBOutlet weak var notificationTableView: UITableView!
@@ -25,13 +25,13 @@ class notificationViewController: UIViewController, UITableViewDelegate,UITableV
     //MARK: - UITableView Delegate Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return a.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let notificationCell = notificationTableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell") as? NotificationTableViewCell
         
-        notificationCell?.notificationLabel.text = "hey"
+        notificationCell?.notificationLabel.text = a[indexPath.row]
         
         return notificationCell!
     }
