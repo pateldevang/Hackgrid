@@ -66,10 +66,21 @@
                                     <outlet property="delegate" destination="uLh-Qs-2HX" id="esO-kd-6Kd"/>
                                 </connections>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R6-Xd-DJO">
-                                <rect key="frame" x="184" y="416" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R6-Xd-DJO">
+                                <rect key="frame" x="38" y="376" width="338" height="50"/>
+                                <color key="backgroundColor" red="0.045052789150000001" green="0.31105142829999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NoA-Nu-sFk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" red="0.9528579116" green="0.95299464460000005" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,7 +90,10 @@
                             <constraint firstItem="wyH-E7-g2b" firstAttribute="leading" secondItem="aUr-Yv-oa7" secondAttribute="leading" id="RrQ-Fi-WjJ"/>
                             <constraint firstItem="aUr-Yv-oa7" firstAttribute="trailing" secondItem="gX7-b0-pRC" secondAttribute="trailing" constant="18" id="SXC-yc-Rd0"/>
                             <constraint firstItem="gX7-b0-pRC" firstAttribute="leading" secondItem="aUr-Yv-oa7" secondAttribute="leading" constant="18" id="UMI-H8-3I9"/>
+                            <constraint firstItem="3R6-Xd-DJO" firstAttribute="top" secondItem="gX7-b0-pRC" secondAttribute="bottom" constant="56" id="Xpi-gH-ZPi"/>
                             <constraint firstItem="aUr-Yv-oa7" firstAttribute="trailing" secondItem="wyH-E7-g2b" secondAttribute="trailing" id="bPw-Ch-IGM"/>
+                            <constraint firstItem="3R6-Xd-DJO" firstAttribute="leading" secondItem="aUr-Yv-oa7" secondAttribute="leading" constant="38" id="k7W-os-gTQ"/>
+                            <constraint firstItem="aUr-Yv-oa7" firstAttribute="trailing" secondItem="3R6-Xd-DJO" secondAttribute="trailing" constant="38" id="n8p-Kb-g67"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aUr-Yv-oa7"/>
                     </view>
