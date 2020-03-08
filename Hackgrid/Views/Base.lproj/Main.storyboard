@@ -48,13 +48,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-E7-g2b">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
                                 <items>
                                     <navigationItem title="Queries" id="Atb-hb-ydY"/>
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gX7-b0-pRC">
-                                <rect key="frame" x="18" y="142" width="378" height="171"/>
+                                <rect key="frame" x="18" y="149" width="378" height="171"/>
                                 <color key="backgroundColor" red="0.9528579116" green="0.95299464460000005" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="171" id="BMU-nE-j2R"/>
@@ -69,7 +69,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wyH-E7-g2b" firstAttribute="top" secondItem="3Ub-lj-1Zz" secondAttribute="top" id="1Ag-ki-49W"/>
+                            <constraint firstItem="wyH-E7-g2b" firstAttribute="top" secondItem="3Ub-lj-1Zz" secondAttribute="top" constant="7" id="1Ag-ki-49W"/>
                             <constraint firstItem="gX7-b0-pRC" firstAttribute="top" secondItem="wyH-E7-g2b" secondAttribute="bottom" constant="46" id="7kM-FJ-TIi"/>
                             <constraint firstItem="wyH-E7-g2b" firstAttribute="leading" secondItem="aUr-Yv-oa7" secondAttribute="leading" id="RrQ-Fi-WjJ"/>
                             <constraint firstItem="aUr-Yv-oa7" firstAttribute="trailing" secondItem="gX7-b0-pRC" secondAttribute="trailing" constant="18" id="SXC-yc-Rd0"/>
