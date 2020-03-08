@@ -160,13 +160,46 @@
                                 <rect key="frame" x="0.0" y="149" width="414" height="664"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="sJv-5Q-fwD">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTableViewCell" rowHeight="76" id="sJv-5Q-fwD" customClass="NotificationTableViewCell" customModule="Hackgrid" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sJv-5Q-fwD" id="8lS-Ha-r2T">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srC-MZ-gug">
+                                                    <rect key="frame" x="18" y="0.0" width="378" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5D-78-pGU">
+                                                            <rect key="frame" x="5" y="12" width="368" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.9528579116" green="0.95299464460000005" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="e5D-78-pGU" firstAttribute="top" secondItem="srC-MZ-gug" secondAttribute="top" constant="12" id="VDq-JH-6Mu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="e5D-78-pGU" secondAttribute="trailing" constant="5" id="Zb7-dd-lrE"/>
+                                                        <constraint firstItem="e5D-78-pGU" firstAttribute="leading" secondItem="srC-MZ-gug" secondAttribute="leading" constant="5" id="leF-LU-rs8"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="9"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="srC-MZ-gug" secondAttribute="bottomMargin" constant="15" id="XoT-Hd-Fvp"/>
+                                                <constraint firstItem="srC-MZ-gug" firstAttribute="top" secondItem="8lS-Ha-r2T" secondAttribute="firstBaseline" symbolic="YES" id="grv-gv-Ad2"/>
+                                                <constraint firstItem="srC-MZ-gug" firstAttribute="leading" secondItem="8lS-Ha-r2T" secondAttribute="leading" constant="18" id="m1y-sb-gej"/>
+                                                <constraint firstAttribute="trailing" secondItem="srC-MZ-gug" secondAttribute="trailing" constant="18" id="wNh-sD-VKe"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="notificationLabel" destination="e5D-78-pGU" id="BLX-Yn-AT6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -194,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEF-no-wyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3303" y="-309"/>
+            <point key="canvasLocation" x="3302.898550724638" y="-309.375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qfi-Tq-DyS">

@@ -10,21 +10,34 @@ import UIKit
 
 class notificationViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
+    
+
     //MARK: - Outlets
     @IBOutlet weak var notificationTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    
     //MARK: - UITableView Delegate Methods
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let notificationCell = notificationTableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell") as? NotificationTableViewCell
+        
+        notificationCell?.notificationLabel.text = "hey"
+        
+        return notificationCell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
     
 
