@@ -124,6 +124,7 @@
 			children = (
 				77CFC1262403A4EC00449969 /* Main.storyboard */,
 				77CFC12B2403A4EF00449969 /* LaunchScreen.storyboard */,
+				5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,7 +135,6 @@
 				77CFC1242403A4EC00449969 /* ViewController.swift */,
 				5B8E5A302415318A00066984 /* QueriesViewController.swift */,
 				5B8E5A322415539800066984 /* notificationViewController.swift */,
-				5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
