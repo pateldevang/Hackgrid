@@ -53,7 +53,7 @@
                                     <navigationItem title="Queries" id="Atb-hb-ydY"/>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your query here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IBz-jL-Kku">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Type your query here." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IBz-jL-Kku">
                                 <rect key="frame" x="18" y="186" width="378" height="141"/>
                                 <color key="backgroundColor" red="0.9528579116" green="0.95299464460000005" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
