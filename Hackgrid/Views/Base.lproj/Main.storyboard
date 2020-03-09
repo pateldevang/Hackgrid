@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQY-uZ-NOa">
-                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
+                                <rect key="frame" x="0.0" y="7" width="508" height="96"/>
                                 <items>
                                     <navigationItem title="Beverages" id="3EE-02-P53"/>
                                 </items>
@@ -45,14 +45,60 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="Profile Bttn"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5i3-q3-b7r">
+                                <rect key="frame" x="18" y="149" width="378" height="378"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wbI-Hg-Ba5">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="378"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GB-oH-U16">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7GB-oH-U16" secondAttribute="height" multiplier="1:1" id="2KQ-w7-Q0z"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="BreakFast Card"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJQ-jc-8jr">
+                                                <rect key="frame" x="0.0" y="197" width="181" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="EJQ-jc-8jr" secondAttribute="height" multiplier="1:1" id="Zhv-SP-PjB"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" backgroundImage="Dinner Card"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mwF-co-OH9">
+                                        <rect key="frame" x="197" y="0.0" width="181" height="378"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMO-9A-KfA">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="AMO-9A-KfA" secondAttribute="height" multiplier="1:1" id="b16-Rs-8u5"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="Lunch Card"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdZ-ei-45d">
+                                                <rect key="frame" x="0.0" y="197" width="181" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SdZ-ei-45d" secondAttribute="height" multiplier="1:1" id="UIE-5i-ciL"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" backgroundImage="Pizza Card"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="J0R-yf-w8a" firstAttribute="top" secondItem="mqf-Qt-ylh" secondAttribute="top" constant="50" id="B88-bL-Vw1"/>
                             <constraint firstItem="XQY-uZ-NOa" firstAttribute="top" secondItem="mqf-Qt-ylh" secondAttribute="top" constant="7" id="Qmf-hV-Vsn"/>
                             <constraint firstItem="XQY-uZ-NOa" firstAttribute="trailing" secondItem="Hyj-gJ-piI" secondAttribute="trailing" id="R0w-TP-Any"/>
+                            <constraint firstAttribute="trailing" secondItem="5i3-q3-b7r" secondAttribute="trailing" constant="18" id="bEf-vk-T1U"/>
                             <constraint firstItem="Hyj-gJ-piI" firstAttribute="trailing" secondItem="J0R-yf-w8a" secondAttribute="trailing" constant="12" id="coc-IL-5c8"/>
+                            <constraint firstItem="5i3-q3-b7r" firstAttribute="leading" secondItem="Hyj-gJ-piI" secondAttribute="leading" constant="18" id="iZZ-3Q-Msy"/>
                             <constraint firstItem="XQY-uZ-NOa" firstAttribute="leading" secondItem="Hyj-gJ-piI" secondAttribute="leading" id="xR9-hn-dku"/>
+                            <constraint firstItem="5i3-q3-b7r" firstAttribute="top" secondItem="XQY-uZ-NOa" secondAttribute="bottom" constant="46" id="yt1-Fs-tBF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hyj-gJ-piI"/>
                     </view>
@@ -60,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTy-Ep-lTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="1548"/>
+            <point key="canvasLocation" x="1815.9420289855075" y="1547.5446428571429"/>
         </scene>
         <!--Queries-->
         <scene sceneID="e0q-Ys-u3d">
@@ -71,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-E7-g2b">
-                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
+                                <rect key="frame" x="0.0" y="7" width="508" height="96"/>
                                 <items>
                                     <navigationItem title="Queries" id="Atb-hb-ydY"/>
                                 </items>
@@ -184,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWR-Pv-M0q">
-                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
+                                <rect key="frame" x="0.0" y="7" width="508" height="96"/>
                                 <items>
                                     <navigationItem title="Notification" id="EQh-vB-M1X"/>
                                 </items>
@@ -304,6 +350,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BreakFast Card" width="181" height="181"/>
+        <image name="Dinner Card" width="181" height="181"/>
+        <image name="Lunch Card" width="181" height="181"/>
+        <image name="Pizza Card" width="181" height="181"/>
         <image name="Profile Bttn" width="42" height="41"/>
         <image name="Tab 1" width="20" height="16"/>
         <image name="Tab 2" width="16" height="22"/>
