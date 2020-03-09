@@ -10,6 +10,8 @@ import UIKit
 
 class notificationViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var barItem: UIBarButtonItem!
+    
     //MARK: - To be removed later
     var notificationsArrray : [String] = ["You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :(","You should fuck off now. The hack is over and you lost :("]
 
@@ -19,12 +21,13 @@ class notificationViewController: UIViewController, UITableViewDelegate,UITableV
     
     //MARK: - viewDidLoad
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         notificationTableView.rowHeight = UITableView.automaticDimension
         notificationTableView.estimatedRowHeight = 120.0
     }
-    
+
     
     //MARK: - UITableView Delegate Methods
     
