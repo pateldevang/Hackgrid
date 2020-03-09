@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="167"/>
+            <point key="canvasLocation" x="-261" y="275"/>
         </scene>
         <!--Beverages-->
         <scene sceneID="pSE-d1-xiE">
@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQY-uZ-NOa">
-                                <rect key="frame" x="0.0" y="7" width="508" height="96"/>
+                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
                                 <items>
                                     <navigationItem title="Beverages" id="3EE-02-P53"/>
                                 </items>
@@ -63,7 +63,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="EJQ-jc-8jr" secondAttribute="height" multiplier="1:1" id="Zhv-SP-PjB"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="Dinner Card"/>
+                                                <state key="normal" backgroundImage="Dinner Card"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -82,7 +82,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="SdZ-ei-45d" secondAttribute="height" multiplier="1:1" id="UIE-5i-ciL"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="Pizza Card"/>
+                                                <state key="normal" backgroundImage="Pizza Card"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTy-Ep-lTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1815.9420289855075" y="1547.5446428571429"/>
+            <point key="canvasLocation" x="1816" y="1594"/>
         </scene>
         <!--Queries-->
         <scene sceneID="e0q-Ys-u3d">
