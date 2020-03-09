@@ -30,7 +30,30 @@
                     <view key="view" contentMode="scaleToFill" id="mqf-Qt-ylh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQY-uZ-NOa">
+                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title="Beverages" id="3EE-02-P53"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0R-yf-w8a">
+                                <rect key="frame" x="359" y="50" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="jf9-fS-qRe"/>
+                                    <constraint firstAttribute="width" constant="43" id="uxg-BN-mK3"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Profile Bttn"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J0R-yf-w8a" firstAttribute="top" secondItem="mqf-Qt-ylh" secondAttribute="top" constant="50" id="B88-bL-Vw1"/>
+                            <constraint firstItem="XQY-uZ-NOa" firstAttribute="top" secondItem="mqf-Qt-ylh" secondAttribute="top" constant="7" id="Qmf-hV-Vsn"/>
+                            <constraint firstItem="XQY-uZ-NOa" firstAttribute="trailing" secondItem="Hyj-gJ-piI" secondAttribute="trailing" id="R0w-TP-Any"/>
+                            <constraint firstItem="Hyj-gJ-piI" firstAttribute="trailing" secondItem="J0R-yf-w8a" secondAttribute="trailing" constant="12" id="coc-IL-5c8"/>
+                            <constraint firstItem="XQY-uZ-NOa" firstAttribute="leading" secondItem="Hyj-gJ-piI" secondAttribute="leading" id="xR9-hn-dku"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hyj-gJ-piI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Beverages" image="Tab 2" id="GiC-at-2Do"/>
