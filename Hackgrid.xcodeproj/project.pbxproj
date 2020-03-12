@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B663C75241AD0F300ECF231 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B663C71241AD0F300ECF231 /* SF-Pro-Rounded-Medium.otf */; };
+		5B663C76241AD0F300ECF231 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B663C72241AD0F300ECF231 /* SF-Pro-Display-Regular.otf */; };
+		5B663C77241AD0F300ECF231 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B663C73241AD0F300ECF231 /* SF-Pro-Display-Bold.otf */; };
+		5B663C78241AD0F300ECF231 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B663C74241AD0F300ECF231 /* SF-Pro-Display-Medium.otf */; };
 		5B8E5A312415318A00066984 /* QueriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A302415318A00066984 /* QueriesViewController.swift */; };
 		5B8E5A332415539800066984 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A322415539800066984 /* notificationViewController.swift */; };
 		5B8E5A3C241592D000066984 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */; };
@@ -33,6 +37,10 @@
 /* Begin PBXFileReference section */
 		1B5612D17992B0094F5E1A55 /* Pods-Hackgrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackgrid.release.xcconfig"; path = "Target Support Files/Pods-Hackgrid/Pods-Hackgrid.release.xcconfig"; sourceTree = "<group>"; };
 		2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackgrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B663C71241AD0F300ECF231 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Medium.otf"; path = "../../../../../../Library/Fonts/SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		5B663C72241AD0F300ECF231 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		5B663C73241AD0F300ECF231 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../../Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		5B663C74241AD0F300ECF231 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../../../Library/Fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		5B8E5A302415318A00066984 /* QueriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueriesViewController.swift; sourceTree = "<group>"; };
 		5B8E5A322415539800066984 /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
@@ -217,6 +225,10 @@
 		77D6353924138187009DB468 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				5B663C73241AD0F300ECF231 /* SF-Pro-Display-Bold.otf */,
+				5B663C74241AD0F300ECF231 /* SF-Pro-Display-Medium.otf */,
+				5B663C72241AD0F300ECF231 /* SF-Pro-Display-Regular.otf */,
+				5B663C71241AD0F300ECF231 /* SF-Pro-Rounded-Medium.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -283,7 +295,11 @@
 			files = (
 				77CFC12D2403A4EF00449969 /* LaunchScreen.storyboard in Resources */,
 				77CFC12A2403A4EF00449969 /* Assets.xcassets in Resources */,
+				5B663C77241AD0F300ECF231 /* SF-Pro-Display-Bold.otf in Resources */,
 				77CFC1282403A4EC00449969 /* Main.storyboard in Resources */,
+				5B663C76241AD0F300ECF231 /* SF-Pro-Display-Regular.otf in Resources */,
+				5B663C75241AD0F300ECF231 /* SF-Pro-Rounded-Medium.otf in Resources */,
+				5B663C78241AD0F300ECF231 /* SF-Pro-Display-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
