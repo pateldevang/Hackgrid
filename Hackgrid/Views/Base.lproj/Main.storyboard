@@ -7,6 +7,17 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Rounded-Medium.otf">
+            <string>SFProRounded-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -117,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-E7-g2b">
-                                <rect key="frame" x="0.0" y="7" width="508" height="96"/>
+                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
                                 <items>
                                     <navigationItem title="Queries" id="Atb-hb-ydY"/>
                                 </items>
@@ -129,7 +140,7 @@
                                     <constraint firstAttribute="height" constant="171" id="BMU-nE-j2R"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outlet property="delegate" destination="uLh-Qs-2HX" id="esO-kd-6Kd"/>
@@ -141,7 +152,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NoA-Nu-sFk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="20"/>
                                 <state key="normal" title="Post">
                                     <color key="titleColor" red="0.9528579116" green="0.95299464460000005" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -230,7 +241,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWR-Pv-M0q">
-                                <rect key="frame" x="0.0" y="7" width="508" height="96"/>
+                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
                                 <items>
                                     <navigationItem title="Notification" id="EQh-vB-M1X"/>
                                 </items>
@@ -252,7 +263,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5D-78-pGU">
                                                             <rect key="frame" x="10" y="10" width="358" height="44"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16.399999618530273"/>
                                                             <color key="textColor" red="0.39996230599999999" green="0.40002411599999999" blue="0.39994883539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <userDefinedRuntimeAttributes>
