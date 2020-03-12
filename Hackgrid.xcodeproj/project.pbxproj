@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B8E5A312415318A00066984 /* QueriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A302415318A00066984 /* QueriesViewController.swift */; };
+		5B8E5A332415539800066984 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A322415539800066984 /* notificationViewController.swift */; };
+		5B8E5A3C241592D000066984 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */; };
+		5B8E5A40241617C600066984 /* BeveragesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A3F241617C600066984 /* BeveragesViewController.swift */; };
 		77CFC1232403A4EC00449969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1222403A4EC00449969 /* AppDelegate.swift */; };
 		77CFC1252403A4EC00449969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1242403A4EC00449969 /* ViewController.swift */; };
 		77CFC1282403A4EC00449969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC1262403A4EC00449969 /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 /* Begin PBXFileReference section */
 		1B5612D17992B0094F5E1A55 /* Pods-Hackgrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackgrid.release.xcconfig"; path = "Target Support Files/Pods-Hackgrid/Pods-Hackgrid.release.xcconfig"; sourceTree = "<group>"; };
 		2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackgrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8E5A302415318A00066984 /* QueriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueriesViewController.swift; sourceTree = "<group>"; };
+		5B8E5A322415539800066984 /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
+		5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		5B8E5A3F241617C600066984 /* BeveragesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesViewController.swift; sourceTree = "<group>"; };
 		74A7B2C68F95F4865FF8CE33 /* Pods-Hackgrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackgrid.debug.xcconfig"; path = "Target Support Files/Pods-Hackgrid/Pods-Hackgrid.debug.xcconfig"; sourceTree = "<group>"; };
 		77CFC11F2403A4EC00449969 /* Hackgrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackgrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CFC1222403A4EC00449969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 			children = (
 				77CFC1262403A4EC00449969 /* Main.storyboard */,
 				77CFC12B2403A4EF00449969 /* LaunchScreen.storyboard */,
+				5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				77CFC1242403A4EC00449969 /* ViewController.swift */,
+				5B8E5A302415318A00066984 /* QueriesViewController.swift */,
+				5B8E5A322415539800066984 /* notificationViewController.swift */,
+				5B8E5A3F241617C600066984 /* BeveragesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,13 +345,17 @@
 			files = (
 				77CFC14C2403ABEE00449969 /* alert+Function.swift in Sources */,
 				77CFC14E2403AD5800449969 /* statusBarView.swift in Sources */,
+				5B8E5A332415539800066984 /* notificationViewController.swift in Sources */,
 				77CFC1502403E0AF00449969 /* AlmofireExtension.swift in Sources */,
+				5B8E5A3C241592D000066984 /* NotificationTableViewCell.swift in Sources */,
+				5B8E5A312415318A00066984 /* QueriesViewController.swift in Sources */,
 				77CFC1472403ABB900449969 /* custom+Navigation.swift in Sources */,
 				77CFC1432403AB8A00449969 /* keyboard+Hide.swift in Sources */,
 				77CFC1252403A4EC00449969 /* ViewController.swift in Sources */,
 				77CFC1452403AB9E00449969 /* checkNetwork.swift in Sources */,
 				77CFC13F2403AAC900449969 /* NetworkEngine.swift in Sources */,
 				77CFC14A2403ABDC00449969 /* haptic+Feedback.swift in Sources */,
+				5B8E5A40241617C600066984 /* BeveragesViewController.swift in Sources */,
 				77CFC1232403A4EC00449969 /* AppDelegate.swift in Sources */,
 				77CFC1522403E11700449969 /* HackgridLogger.swift in Sources */,
 				77CFC13C2403AA9600449969 /* Reachability.swift in Sources */,
