@@ -230,6 +230,11 @@
                                     <constraint firstAttribute="width" constant="43" id="QAn-uU-D6A"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Profile Bttn"/>
+                                <connections>
+                                    <segue destination="BiO-dI-sO2" kind="popoverPresentation" popoverAnchorView="ddf-Nk-UoN" id="Ict-6l-kFj">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hack is about to Start!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="axI-hT-8ta">
                                 <rect key="frame" x="106" y="451" width="202" height="26.5"/>
@@ -309,6 +314,11 @@
                                     <constraint firstAttribute="width" constant="43" id="8Ma-dW-icE"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Profile Bttn"/>
+                                <connections>
+                                    <segue destination="BiO-dI-sO2" kind="popoverPresentation" popoverAnchorView="BBs-Yf-Fpy" id="PKS-7N-Vxk">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I4p-gE-eCe">
                                 <rect key="frame" x="69" y="122" width="277" height="32"/>
@@ -374,6 +384,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFf-qM-okO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3302.898550724638" y="1228.7946428571429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K3i-dX-idu">
+            <objects>
+                <viewController id="BiO-dI-sO2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fWn-bo-6ev">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wrb-YB-nGQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                <items>
+                                    <navigationItem title="Profile" id="IRG-vN-ffu"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Wrb-YB-nGQ" firstAttribute="top" secondItem="g6y-7o-BOy" secondAttribute="top" id="1qQ-sO-RHx"/>
+                            <constraint firstItem="Wrb-YB-nGQ" firstAttribute="leading" secondItem="g6y-7o-BOy" secondAttribute="leading" id="KD1-Ap-1uK"/>
+                            <constraint firstItem="Wrb-YB-nGQ" firstAttribute="trailing" secondItem="g6y-7o-BOy" secondAttribute="trailing" id="jAk-Mk-lEc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g6y-7o-BOy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mm8-l0-L5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5745" y="494"/>
         </scene>
         <!--Notification-->
         <scene sceneID="AwS-T7-fGf">
@@ -643,4 +681,7 @@
         <image name="Tab 4" width="18" height="20"/>
         <image name="Tab 5" width="20" height="20"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PKS-7N-Vxk"/>
+    </inferredMetricsTieBreakers>
 </document>
