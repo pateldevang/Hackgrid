@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ds2-sQ-8FI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vIS-3l-cPu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -295,14 +295,65 @@
                     <view key="view" contentMode="scaleToFill" id="TxT-Xs-B9d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVD-Ud-KeC">
+                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title="Information" id="fI4-M2-7UU"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBs-Yf-Fpy">
+                                <rect key="frame" x="359" y="50" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="6eb-7M-Sjj"/>
+                                    <constraint firstAttribute="width" constant="43" id="8Ma-dW-icE"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Profile Bttn"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I4p-gE-eCe">
+                                <rect key="frame" x="69" y="122" width="277" height="32"/>
+                                <segments>
+                                    <segment title="Sponsor"/>
+                                    <segment title="ADG"/>
+                                </segments>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhH-Ta-dcT">
+                                <rect key="frame" x="18" y="177" width="378" height="378"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YhH-Ta-dcT" secondAttribute="height" multiplier="1:1" id="73F-qZ-GY5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="QCW-al-Gvj" kind="embed" id="b7c-1I-sA3"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dVD-Ud-KeC" firstAttribute="top" secondItem="TxT-Xs-B9d" secondAttribute="top" constant="7" id="666-rs-NkD"/>
+                            <constraint firstItem="47w-xl-x3U" firstAttribute="trailing" secondItem="I4p-gE-eCe" secondAttribute="trailing" constant="68" id="CGA-GM-8tr"/>
+                            <constraint firstItem="dVD-Ud-KeC" firstAttribute="leading" secondItem="47w-xl-x3U" secondAttribute="leading" id="Dee-Eo-P1G"/>
+                            <constraint firstItem="YhH-Ta-dcT" firstAttribute="top" secondItem="I4p-gE-eCe" secondAttribute="bottom" constant="24" id="IJt-j3-ufH"/>
+                            <constraint firstItem="I4p-gE-eCe" firstAttribute="top" secondItem="dVD-Ud-KeC" secondAttribute="bottom" constant="19" id="Ses-PJ-x5q"/>
+                            <constraint firstItem="YhH-Ta-dcT" firstAttribute="leading" secondItem="47w-xl-x3U" secondAttribute="leading" constant="18" id="ddB-uR-YpF"/>
+                            <constraint firstItem="47w-xl-x3U" firstAttribute="trailing" secondItem="BBs-Yf-Fpy" secondAttribute="trailing" constant="12" id="eJ8-GG-Kyh"/>
+                            <constraint firstItem="BBs-Yf-Fpy" firstAttribute="top" secondItem="TxT-Xs-B9d" secondAttribute="top" constant="50" id="eXz-6S-GwM"/>
+                            <constraint firstItem="I4p-gE-eCe" firstAttribute="leading" secondItem="47w-xl-x3U" secondAttribute="leading" constant="69" id="hfD-yQ-5hK"/>
+                            <constraint firstItem="47w-xl-x3U" firstAttribute="trailing" secondItem="YhH-Ta-dcT" secondAttribute="trailing" constant="18" id="iXW-K3-Nfd"/>
+                            <constraint firstItem="dVD-Ud-KeC" firstAttribute="trailing" secondItem="47w-xl-x3U" secondAttribute="trailing" id="xKX-R1-ZHT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="47w-xl-x3U"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Information" image="Tab 5" id="Ajl-fw-4RI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFf-qM-okO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3303" y="1229"/>
+            <point key="canvasLocation" x="3302.898550724638" y="1228.7946428571429"/>
         </scene>
         <!--Notification-->
         <scene sceneID="AwS-T7-fGf">
@@ -432,8 +483,82 @@
             </objects>
             <point key="canvasLocation" x="750" y="275"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="GKt-Uy-bZW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKU-El-yp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="QCW-al-Gvj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X87-Ax-yMO">
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="630"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ADG Logo" translatesAutoresizingMaskIntoConstraints="NO" id="BjJ-ve-dvj">
+                                <rect key="frame" x="64" y="16" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ER8-qN-llg"/>
+                                    <constraint firstAttribute="width" secondItem="BjJ-ve-dvj" secondAttribute="height" multiplier="125:17" id="MZE-Az-VxD"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsO-2H-jge">
+                                <rect key="frame" x="0.0" y="58" width="378" height="572"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-7w-png">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="575"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdD-AI-yGm">
+                                                <rect key="frame" x="14" y="0.0" width="350" height="555"/>
+                                                <mutableString key="text">1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+2. Text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type. 
+3. Specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+4. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+5. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+6. from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "
+7. De Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="CdD-AI-yGm" firstAttribute="top" secondItem="WWf-7w-png" secondAttribute="top" id="Rcv-ET-KlF"/>
+                                            <constraint firstAttribute="trailing" secondItem="CdD-AI-yGm" secondAttribute="trailing" constant="14" id="VJN-2u-Fbw"/>
+                                            <constraint firstAttribute="height" constant="575" id="jnS-Kz-zus"/>
+                                            <constraint firstItem="CdD-AI-yGm" firstAttribute="leading" secondItem="WWf-7w-png" secondAttribute="leading" constant="14" id="vGw-gw-rcp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WWf-7w-png" firstAttribute="leading" secondItem="WsO-2H-jge" secondAttribute="leading" id="Fdz-lk-bVR"/>
+                                    <constraint firstItem="WWf-7w-png" firstAttribute="trailing" secondItem="WsO-2H-jge" secondAttribute="trailing" id="Gdg-Um-INR"/>
+                                    <constraint firstAttribute="bottom" secondItem="WWf-7w-png" secondAttribute="bottom" id="PPX-CP-ro5"/>
+                                    <constraint firstItem="WWf-7w-png" firstAttribute="top" secondItem="WsO-2H-jge" secondAttribute="top" id="pJc-dH-C0e"/>
+                                    <constraint firstItem="WWf-7w-png" firstAttribute="width" secondItem="WsO-2H-jge" secondAttribute="width" id="wFc-gt-29x"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="puf-Fs-y9w"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="8oE-Kg-LPu"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BjJ-ve-dvj" firstAttribute="top" secondItem="X87-Ax-yMO" secondAttribute="topMargin" constant="-28" id="3Z9-Se-M7t"/>
+                            <constraint firstItem="BjJ-ve-dvj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X87-Ax-yMO" secondAttribute="leading" constant="64" id="3xb-nx-NZa"/>
+                            <constraint firstItem="WsO-2H-jge" firstAttribute="top" secondItem="X87-Ax-yMO" secondAttribute="top" constant="58" id="EIa-o2-rHS"/>
+                            <constraint firstItem="BjJ-ve-dvj" firstAttribute="top" secondItem="X87-Ax-yMO" secondAttribute="top" constant="16" id="Jo2-xs-ZzI"/>
+                            <constraint firstAttribute="trailing" secondItem="WsO-2H-jge" secondAttribute="trailing" id="PJV-Z6-NV1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="WsO-2H-jge" secondAttribute="bottom" id="nej-nx-oyb"/>
+                            <constraint firstItem="WsO-2H-jge" firstAttribute="leading" secondItem="X87-Ax-yMO" secondAttribute="leading" id="zE8-44-reo"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BjJ-ve-dvj" secondAttribute="trailing" constant="64" id="zJI-lv-JFl"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="378" height="630"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3953.6231884057975" y="1767.8571428571429"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ADG Logo" width="250" height="34"/>
         <image name="BreakFast Card" width="181" height="181"/>
         <image name="Dinner Card" width="181" height="181"/>
         <image name="Lunch Card" width="181" height="181"/>
