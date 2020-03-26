@@ -8,25 +8,39 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var profileTableView: UITableView!
     
+    let queries = [["query":"What’s happing out there ?","answer":"No answer is really helping you to win the hack you can sleep :\""]]
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return queries.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = profileTableView.dequeueReusableCell(withIdentifier: "querycell") as? RecentQueriesTableViewCell
+        
+        cell?.queryLabel.text = queries[indexPath.row]["query"]
+        cell?.queryAnswerLabel.text = queries[indexPath.row]["answer"]
+        
+        //setting view border
+        cell?.querybackgroundView.layer.borderWidth = 1
+         cell?.querybackgroundView.layer.borderColor = #colorLiteral(red: 0.5921568627, green: 0.5921568627, blue: 0.5921568627, alpha: 1)
+        
+        cell?.querybackgroundView.layer.masksToBounds = false
+        
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 77
+    }
+    
 
 }
