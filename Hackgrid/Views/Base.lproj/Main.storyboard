@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
         <array key="SF-Pro-Display-Medium.otf">
             <string>SFProDisplay-Medium</string>
         </array>
@@ -203,18 +206,87 @@
         <!--Timeline-->
         <scene sceneID="xS6-zI-aqr">
             <objects>
-                <viewController id="7b6-oO-Oc9" sceneMemberID="viewController">
+                <viewController id="7b6-oO-Oc9" customClass="TimelineViewController" customModule="Hackgrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5yN-9H-XE6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hj-Pv-hv8">
+                                <rect key="frame" x="30" y="107" width="354" height="354"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0hj-Pv-hv8" secondAttribute="height" multiplier="1:1" id="yyD-Ff-KrU"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6X-zq-Ttn">
+                                <rect key="frame" x="0.0" y="7" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title="Timeline" id="TrT-If-deB"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-Nk-UoN">
+                                <rect key="frame" x="359" y="50" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="2ec-Me-CJl"/>
+                                    <constraint firstAttribute="width" constant="43" id="QAn-uU-D6A"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Profile Bttn"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hack is about to Start!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="axI-hT-8ta">
+                                <rect key="frame" x="106" y="451" width="202" height="26.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8z-Kw-XLR">
+                                <rect key="frame" x="0.0" y="583" width="414" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="300" constant="154" id="Wyr-bN-XB6"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ds9-wF-Ewx"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="3hq-aN-nPc"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbZ-T6-Pte">
+                                <rect key="frame" x="20" y="542" width="103.5" height="26"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GbZ-T6-Pte" firstAttribute="top" relation="greaterThanOrEqual" secondItem="axI-hT-8ta" secondAttribute="bottom" constant="30" id="2YZ-4h-Lzp"/>
+                            <constraint firstItem="lYx-J1-qmr" firstAttribute="trailing" secondItem="e8z-Kw-XLR" secondAttribute="trailing" id="3mk-wl-rFF"/>
+                            <constraint firstItem="lYx-J1-qmr" firstAttribute="trailing" secondItem="ddf-Nk-UoN" secondAttribute="trailing" constant="12" id="91b-np-ugd"/>
+                            <constraint firstItem="lYx-J1-qmr" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="axI-hT-8ta" secondAttribute="trailing" constant="50" id="A2r-3X-65W"/>
+                            <constraint firstItem="lYx-J1-qmr" firstAttribute="bottom" secondItem="e8z-Kw-XLR" secondAttribute="bottom" constant="50" id="A6E-AZ-yJe"/>
+                            <constraint firstItem="lYx-J1-qmr" firstAttribute="trailing" secondItem="0hj-Pv-hv8" secondAttribute="trailing" constant="30" id="Bca-UZ-nnP"/>
+                            <constraint firstItem="0hj-Pv-hv8" firstAttribute="leading" secondItem="lYx-J1-qmr" secondAttribute="leading" constant="30" id="CV7-wv-LfS"/>
+                            <constraint firstItem="0hj-Pv-hv8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ddf-Nk-UoN" secondAttribute="bottom" constant="-30" id="DtC-mk-QNC"/>
+                            <constraint firstItem="GbZ-T6-Pte" firstAttribute="leading" secondItem="lYx-J1-qmr" secondAttribute="leading" constant="20" id="Ily-ju-ctj"/>
+                            <constraint firstItem="axI-hT-8ta" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lYx-J1-qmr" secondAttribute="leading" constant="50" id="LZl-At-AlH"/>
+                            <constraint firstItem="N6X-zq-Ttn" firstAttribute="leading" secondItem="lYx-J1-qmr" secondAttribute="leading" id="MB4-jr-Vua"/>
+                            <constraint firstItem="e8z-Kw-XLR" firstAttribute="leading" secondItem="lYx-J1-qmr" secondAttribute="leading" id="UWH-LB-NKf"/>
+                            <constraint firstItem="GbZ-T6-Pte" firstAttribute="top" secondItem="axI-hT-8ta" secondAttribute="bottom" priority="200" constant="57.5" id="Wch-pJ-Uab"/>
+                            <constraint firstItem="0hj-Pv-hv8" firstAttribute="top" secondItem="lYx-J1-qmr" secondAttribute="top" priority="250" constant="63" id="h1c-1g-goz"/>
+                            <constraint firstItem="N6X-zq-Ttn" firstAttribute="trailing" secondItem="lYx-J1-qmr" secondAttribute="trailing" id="ieD-VI-FqY"/>
+                            <constraint firstItem="N6X-zq-Ttn" firstAttribute="top" secondItem="5yN-9H-XE6" secondAttribute="top" constant="7" id="mbq-IB-rFK"/>
+                            <constraint firstItem="e8z-Kw-XLR" firstAttribute="top" secondItem="GbZ-T6-Pte" secondAttribute="bottom" priority="750" constant="41" id="pms-Rh-jIj"/>
+                            <constraint firstItem="axI-hT-8ta" firstAttribute="top" secondItem="0hj-Pv-hv8" secondAttribute="bottom" constant="-10" id="txQ-NS-L5P"/>
+                            <constraint firstItem="ddf-Nk-UoN" firstAttribute="top" secondItem="5yN-9H-XE6" secondAttribute="top" constant="50" id="ygd-bP-TTk"/>
+                            <constraint firstItem="axI-hT-8ta" firstAttribute="centerX" secondItem="5yN-9H-XE6" secondAttribute="centerX" id="ywn-9G-Agy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lYx-J1-qmr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Timeline" image="Tab 1" id="j7o-BM-aV4"/>
+                    <connections>
+                        <outlet property="customView" destination="0hj-Pv-hv8" id="AEa-KQ-cpw"/>
+                        <outlet property="scrollView" destination="e8z-Kw-XLR" id="4mN-EY-Nj4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJH-K1-CZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="-597"/>
+            <point key="canvasLocation" x="1815.9420289855075" y="-597.32142857142856"/>
         </scene>
         <!--Information-->
         <scene sceneID="M8X-XG-YkI">
@@ -346,6 +418,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.31372549019607843" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="7b6-oO-Oc9" kind="relationship" relationship="viewControllers" id="f1g-Gb-W2X"/>
