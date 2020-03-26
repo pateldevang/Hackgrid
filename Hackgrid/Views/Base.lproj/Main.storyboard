@@ -316,9 +316,12 @@
                                     <segment title="Sponsor"/>
                                     <segment title="ADG"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentPushed:" destination="vIS-3l-cPu" eventType="valueChanged" id="D5x-zd-Rkp"/>
+                                </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhH-Ta-dcT">
-                                <rect key="frame" x="18" y="406" width="417" height="378"/>
+                                <rect key="frame" x="18" y="177" width="378" height="378"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YhH-Ta-dcT" secondAttribute="height" multiplier="1:1" id="73F-qZ-GY5"/>
@@ -334,7 +337,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6B-xe-KPc">
-                                <rect key="frame" x="18" y="406" width="417" height="636"/>
+                                <rect key="frame" x="18" y="177" width="378" height="636"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -363,6 +366,10 @@
                         <viewLayoutGuide key="safeArea" id="47w-xl-x3U"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Information" image="Tab 5" id="Ajl-fw-4RI"/>
+                    <connections>
+                        <outlet property="adgView" destination="YhH-Ta-dcT" id="9Wg-ld-4za"/>
+                        <outlet property="sponsorView" destination="U6B-xe-KPc" id="v9k-4I-sz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFf-qM-okO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

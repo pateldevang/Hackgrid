@@ -10,21 +10,25 @@ import UIKit
 
 class InformationViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
+     @IBOutlet weak var sponsorView: UIView!
+     @IBOutlet weak var adgView: UIView!
+     //@IBOutlet weak var adgView2: UIView!
+     override func viewDidLoad() {
+         super.viewDidLoad()
+         sponsorView.isHidden = false
+         adgView.isHidden = true
+     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     @IBAction func segmentPushed(_ sender: UISegmentedControl) {
+         if sender.selectedSegmentIndex == 0{
+             sponsorView.isHidden = false
+             adgView.isHidden = true
+         }
+         else{
+             sponsorView.isHidden = true
+             adgView.isHidden = false
+         }
+     }
 
 }
