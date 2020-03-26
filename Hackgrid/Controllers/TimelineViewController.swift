@@ -134,8 +134,9 @@ class TimelineViewController: UIViewController {
             
             myImageView.frame.size.width = imageWidth
             myImageView.frame.size.height = imageHeight
-            myImageView.frame.origin.y = 10
+            myImageView.frame.origin.y = 0
             myImageView.frame.origin.x = xPostion
+            myImageView.contentMode = .scaleAspectFit
             
             scrollView.addSubview(myImageView)
             
@@ -146,6 +147,5 @@ class TimelineViewController: UIViewController {
             scrollView.contentSize = CGSize(width: scrollViewContentsSize, height: imageHeight)
      }
  }
-         
 }
 
