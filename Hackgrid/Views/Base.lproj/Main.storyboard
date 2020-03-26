@@ -291,7 +291,7 @@
         <!--Information-->
         <scene sceneID="M8X-XG-YkI">
             <objects>
-                <viewController id="vIS-3l-cPu" sceneMemberID="viewController">
+                <viewController id="vIS-3l-cPu" customClass="InformationViewController" customModule="Hackgrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TxT-Xs-B9d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
