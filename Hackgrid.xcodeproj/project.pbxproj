@@ -20,6 +20,7 @@
 		5BEED174242CF9FC0095B037 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED173242CF9FB0095B037 /* ProfileViewController.swift */; };
 		5BEED176242CFEB50095B037 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BEED175242CFEB50095B037 /* SF-Pro-Display-Semibold.otf */; };
 		5BEED178242CFF890095B037 /* RecentQueriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED177242CFF890095B037 /* RecentQueriesTableViewCell.swift */; };
+		5BEED17A242D45DF0095B037 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED179242D45DF0095B037 /* LoginViewController.swift */; };
 		77CFC1232403A4EC00449969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1222403A4EC00449969 /* AppDelegate.swift */; };
 		77CFC1252403A4EC00449969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1242403A4EC00449969 /* ViewController.swift */; };
 		77CFC1282403A4EC00449969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC1262403A4EC00449969 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		5BEED173242CF9FB0095B037 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5BEED175242CFEB50095B037 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		5BEED177242CFF890095B037 /* RecentQueriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentQueriesTableViewCell.swift; sourceTree = "<group>"; };
+		5BEED179242D45DF0095B037 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		74A7B2C68F95F4865FF8CE33 /* Pods-Hackgrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackgrid.debug.xcconfig"; path = "Target Support Files/Pods-Hackgrid/Pods-Hackgrid.debug.xcconfig"; sourceTree = "<group>"; };
 		77CFC11F2403A4EC00449969 /* Hackgrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackgrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CFC1222403A4EC00449969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				5BC4B3AD242C6F9100F824B2 /* TimelineViewController.swift */,
 				5BEED171242C95830095B037 /* InformationViewController.swift */,
 				5BEED173242CF9FB0095B037 /* ProfileViewController.swift */,
+				5BEED179242D45DF0095B037 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				5BC4B3AE242C6F9100F824B2 /* TimelineViewController.swift in Sources */,
 				5B8E5A312415318A00066984 /* QueriesViewController.swift in Sources */,
 				77CFC1472403ABB900449969 /* custom+Navigation.swift in Sources */,
+				5BEED17A242D45DF0095B037 /* LoginViewController.swift in Sources */,
 				77CFC1432403AB8A00449969 /* keyboard+Hide.swift in Sources */,
 				77CFC1252403A4EC00449969 /* ViewController.swift in Sources */,
 				77CFC1452403AB9E00449969 /* checkNetwork.swift in Sources */,
