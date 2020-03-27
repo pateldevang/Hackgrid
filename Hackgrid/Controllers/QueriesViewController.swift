@@ -22,6 +22,9 @@ class QueriesViewController: UIViewController, UITextViewDelegate, UITableViewDe
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         queriesTextViewSetup()
+        FAQTableView.rowHeight = UITableView.automaticDimension
+        FAQTableView.estimatedRowHeight = 44
+        
     }
     
     
@@ -81,17 +84,17 @@ class QueriesViewController: UIViewController, UITextViewDelegate, UITableViewDe
         return returnCell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        /*
-        let Screenwidth = UIScreen.main.bounds.width
-        let width = (Screenwidth-35)
-        let aspectRatio : CGFloat = 0.2031662269
-        let height = width * aspectRatio
-        return height */
-        
-        return 77
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        /*
+//
+//        let Screenwidth = UIScreen.main.bounds.width
+//        let width = (Screenwidth-35)
+//        let aspectRatio : CGFloat = 0.2031662269
+//        let height = width * aspectRatio
+//        return height
+//        */
+//      return 77
+//    }
 }
 
 

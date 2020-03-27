@@ -24,4 +24,7 @@ class SignUpViewController: UIViewController {
         
     }
     
+    @IBAction func loginClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

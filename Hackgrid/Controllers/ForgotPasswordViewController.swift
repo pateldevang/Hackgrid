@@ -21,5 +21,8 @@ class ForgotPasswordViewController: UIViewController {
 
     @IBAction func sendLinkClicked(_ sender: Any) {
     }
+    @IBAction func backClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
 }

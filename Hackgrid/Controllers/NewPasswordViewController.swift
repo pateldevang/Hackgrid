@@ -26,10 +26,15 @@ class NewPasswordViewController: UIViewController {
         let alert = UIAlertController(title: "Congratulations!", message: "Password changed successfully", preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome!", style: .cancel) { action in
             print("Continue")
-            self.performSegue(withIdentifier: "mainvc", sender: nil)
+            self.performSegue(withIdentifier: "mainvc2", sender: nil)
         }
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
         
     }
+    
+    @IBAction func backClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
