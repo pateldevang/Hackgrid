@@ -148,7 +148,7 @@
                                 <rect key="frame" x="18" y="149" width="378" height="171"/>
                                 <color key="backgroundColor" red="0.9528579116" green="0.95299464460000005" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="171" id="BMU-nE-j2R"/>
+                                    <constraint firstAttribute="width" secondItem="gX7-b0-pRC" secondAttribute="height" multiplier="42:19" id="TWv-E5-oYK"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="17"/>
@@ -862,7 +862,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Tqc-9B-1Kz">
-                                <rect key="frame" x="38" y="426" width="338" height="218"/>
+                                <rect key="frame" x="38" y="427" width="338" height="218"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHs-0q-BBx">
                                         <rect key="frame" x="0.0" y="0.0" width="338" height="50"/>
@@ -914,16 +914,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6K9-Wg-2x1">
-                                <rect key="frame" x="100" y="822" width="214" height="30"/>
+                                <rect key="frame" x="106" y="822" width="202" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Don’t have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="2A7-nn-eJU">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
                                         <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33v-Yh-muX">
-                                        <rect key="frame" x="160" y="0.0" width="54" height="30"/>
+                                        <rect key="frame" x="147.5" y="0.0" width="54.5" height="30"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -935,7 +935,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LT-9y-zm3">
-                                <rect key="frame" x="38" y="373" width="74.5" height="35"/>
+                                <rect key="frame" x="38" y="373" width="72" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="30"/>
                                 <color key="textColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -990,7 +990,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="VNU-E1-zlF">
-                                <rect key="frame" x="38" y="426" width="338" height="176"/>
+                                <rect key="frame" x="38" y="427" width="338" height="176"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-my-Fhl">
                                         <rect key="frame" x="0.0" y="0.0" width="338" height="50"/>
@@ -1032,22 +1032,22 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGt-wh-AJJ">
-                                <rect key="frame" x="38" y="373" width="108" height="35"/>
+                                <rect key="frame" x="38" y="373" width="102.5" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="30"/>
                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaQ-oZ-T2a">
-                                <rect key="frame" x="99" y="816" width="216" height="30"/>
+                                <rect key="frame" x="106" y="816" width="202" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-pm-IFu">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="30"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
                                         <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjk-xC-WJT">
-                                        <rect key="frame" x="174" y="0.0" width="42" height="30"/>
+                                        <rect key="frame" x="161" y="0.0" width="41" height="30"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1106,6 +1106,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NG8-K4-J9J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5093" y="274"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="ITE-Rp-jgC">
+            <objects>
+                <viewController id="y4f-XU-2u1" customClass="ForgotPasswordViewController" customModule="Hackgrid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F92-ue-NKb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="g2q-pX-kPd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amg-f6-YZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2399" y="274"/>
         </scene>
     </scenes>
     <resources>
