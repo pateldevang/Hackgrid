@@ -250,7 +250,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hack is about to Start!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="axI-hT-8ta">
-                                <rect key="frame" x="97" y="451" width="220.5" height="26"/>
+                                <rect key="frame" x="106" y="451" width="202" height="26.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -264,7 +264,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="3hq-aN-nPc"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="GbZ-T6-Pte">
-                                <rect key="frame" x="20" y="535" width="102" height="26"/>
+                                <rect key="frame" x="20" y="535" width="103.5" height="26.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -413,16 +413,16 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="02K-T8-6ZK">
-                                <rect key="frame" x="126.5" y="346" width="161" height="61.5"/>
+                                <rect key="frame" x="127" y="346" width="160.5" height="62.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ttP-Nt-QIZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="161" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160.5" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q5t-ct-EPx">
-                                        <rect key="frame" x="0.0" y="37.5" width="161" height="24"/>
+                                        <rect key="frame" x="0.0" y="38.5" width="160.5" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="LCD-Rd-nGM"/>
                                         </constraints>
@@ -891,6 +891,11 @@
                                         <state key="normal" title="Forget Password?">
                                             <color key="titleColor" red="0.42745098039215684" green="0.44705882352941173" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="y4f-XU-2u1" kind="popoverPresentation" popoverAnchorView="aaK-sK-ETE" id="Urj-gt-HyY">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkZ-cv-w2W">
                                         <rect key="frame" x="0.0" y="168" width="338" height="50"/>
@@ -1112,15 +1117,76 @@
             <objects>
                 <viewController id="y4f-XU-2u1" customClass="ForgotPasswordViewController" customModule="Hackgrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F92-ue-NKb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Forgot Password Illustration" translatesAutoresizingMaskIntoConstraints="NO" id="waX-Sq-Uma">
+                                <rect key="frame" x="71" y="107" width="272" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="waX-Sq-Uma" secondAttribute="height" multiplier="136:101" id="QFl-lf-mhj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="100" verticalCompressionResistancePriority="100" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="xat-Mv-FFj">
+                                <rect key="frame" x="37" y="416" width="339" height="135.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HUZ-P1-WpG">
+                                        <rect key="frame" x="0.0" y="0.0" width="339" height="50"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HUZ-P1-WpG" secondAttribute="height" multiplier="169:25" id="jqu-qL-gcK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wha-ZW-kRi">
+                                        <rect key="frame" x="0.0" y="85" width="339" height="50.5"/>
+                                        <color key="backgroundColor" red="0.045052789150000001" green="0.31105142829999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Wha-ZW-kRi" secondAttribute="height" multiplier="169:25" id="i4u-Kh-Pg8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="20"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.9528579116" green="0.95299464460000005" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="postButtonClicked:" destination="uLh-Qs-2HX" eventType="touchUpInside" id="pWd-J2-E3X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="01C-ob-MVU">
+                                <rect key="frame" x="39" y="362" width="216" height="36"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="30"/>
+                                <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xat-Mv-FFj" firstAttribute="leading" secondItem="g2q-pX-kPd" secondAttribute="leading" constant="37" id="4K1-9X-xev"/>
+                            <constraint firstItem="01C-ob-MVU" firstAttribute="leading" secondItem="g2q-pX-kPd" secondAttribute="leading" constant="39" id="HA1-cn-nhZ"/>
+                            <constraint firstItem="waX-Sq-Uma" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g2q-pX-kPd" secondAttribute="leading" constant="60" id="Jnh-FB-p02"/>
+                            <constraint firstItem="waX-Sq-Uma" firstAttribute="leading" secondItem="g2q-pX-kPd" secondAttribute="leading" priority="900" constant="71" id="L7a-bT-4oS"/>
+                            <constraint firstItem="g2q-pX-kPd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="01C-ob-MVU" secondAttribute="trailing" constant="130" id="LTQ-1w-2q5"/>
+                            <constraint firstItem="xat-Mv-FFj" firstAttribute="top" secondItem="01C-ob-MVU" secondAttribute="bottom" constant="18" id="baa-2M-yM1"/>
+                            <constraint firstItem="01C-ob-MVU" firstAttribute="top" secondItem="waX-Sq-Uma" secondAttribute="bottom" constant="53" id="c7H-hc-ngy"/>
+                            <constraint firstItem="waX-Sq-Uma" firstAttribute="top" secondItem="F92-ue-NKb" secondAttribute="top" constant="107" id="gfC-pB-hAa"/>
+                            <constraint firstItem="g2q-pX-kPd" firstAttribute="trailing" secondItem="waX-Sq-Uma" secondAttribute="trailing" priority="900" constant="71" id="kN8-bQ-eaz"/>
+                            <constraint firstItem="g2q-pX-kPd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="waX-Sq-Uma" secondAttribute="trailing" constant="60" id="pOY-l5-w0p"/>
+                            <constraint firstItem="g2q-pX-kPd" firstAttribute="trailing" secondItem="xat-Mv-FFj" secondAttribute="trailing" constant="38" id="tQd-Bv-aLD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="g2q-pX-kPd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ssi-hd-LCi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amg-f6-YZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2399" y="274"/>
+            <point key="canvasLocation" x="-2400" y="273.88392857142856"/>
         </scene>
     </scenes>
     <resources>
@@ -1128,6 +1194,7 @@
         <image name="BreakFast Card" width="181" height="181"/>
         <image name="Cards" width="378" height="706"/>
         <image name="Dinner Card" width="181" height="181"/>
+        <image name="Forgot Password Illustration" width="272" height="202"/>
         <image name="Lunch Card" width="181" height="181"/>
         <image name="Pizza Card" width="181" height="181"/>
         <image name="Profile Bttn" width="42" height="41"/>
