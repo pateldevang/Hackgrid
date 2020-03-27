@@ -23,6 +23,7 @@
 		5BEED17A242D45DF0095B037 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED179242D45DF0095B037 /* LoginViewController.swift */; };
 		5BEED17C242DBD630095B037 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED17B242DBD630095B037 /* SignUpViewController.swift */; };
 		5BEED17E242DC5CF0095B037 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED17D242DC5CF0095B037 /* ForgotPasswordViewController.swift */; };
+		5BEED180242DC8F80095B037 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED17F242DC8F80095B037 /* NewPasswordViewController.swift */; };
 		77CFC1232403A4EC00449969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1222403A4EC00449969 /* AppDelegate.swift */; };
 		77CFC1252403A4EC00449969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1242403A4EC00449969 /* ViewController.swift */; };
 		77CFC1282403A4EC00449969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC1262403A4EC00449969 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		5BEED179242D45DF0095B037 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5BEED17B242DBD630095B037 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5BEED17D242DC5CF0095B037 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		5BEED17F242DC8F80095B037 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		74A7B2C68F95F4865FF8CE33 /* Pods-Hackgrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackgrid.debug.xcconfig"; path = "Target Support Files/Pods-Hackgrid/Pods-Hackgrid.debug.xcconfig"; sourceTree = "<group>"; };
 		77CFC11F2403A4EC00449969 /* Hackgrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackgrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CFC1222403A4EC00449969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,15 +162,16 @@
 			isa = PBXGroup;
 			children = (
 				77CFC1242403A4EC00449969 /* ViewController.swift */,
-				5B8E5A302415318A00066984 /* QueriesViewController.swift */,
-				5B8E5A322415539800066984 /* notificationViewController.swift */,
-				5B8E5A3F241617C600066984 /* BeveragesViewController.swift */,
-				5BC4B3AD242C6F9100F824B2 /* TimelineViewController.swift */,
-				5BEED171242C95830095B037 /* InformationViewController.swift */,
-				5BEED173242CF9FB0095B037 /* ProfileViewController.swift */,
 				5BEED179242D45DF0095B037 /* LoginViewController.swift */,
 				5BEED17B242DBD630095B037 /* SignUpViewController.swift */,
 				5BEED17D242DC5CF0095B037 /* ForgotPasswordViewController.swift */,
+				5BEED17F242DC8F80095B037 /* NewPasswordViewController.swift */,
+				5BC4B3AD242C6F9100F824B2 /* TimelineViewController.swift */,
+				5B8E5A3F241617C600066984 /* BeveragesViewController.swift */,
+				5B8E5A302415318A00066984 /* QueriesViewController.swift */,
+				5B8E5A322415539800066984 /* notificationViewController.swift */,
+				5BEED171242C95830095B037 /* InformationViewController.swift */,
+				5BEED173242CF9FB0095B037 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				5BEED178242CFF890095B037 /* RecentQueriesTableViewCell.swift in Sources */,
 				77CFC1522403E11700449969 /* HackgridLogger.swift in Sources */,
 				77CFC13C2403AA9600449969 /* Reachability.swift in Sources */,
+				5BEED180242DC8F80095B037 /* NewPasswordViewController.swift in Sources */,
 				77CFC1392403AA0C00449969 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
