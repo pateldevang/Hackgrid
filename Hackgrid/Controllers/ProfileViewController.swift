@@ -32,7 +32,6 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         //setting view border
         cell?.querybackgroundView.layer.borderWidth = 1
          cell?.querybackgroundView.layer.borderColor = #colorLiteral(red: 0.5921568627, green: 0.5921568627, blue: 0.5921568627, alpha: 1)
-        
         cell?.querybackgroundView.layer.masksToBounds = false
         
         return cell!

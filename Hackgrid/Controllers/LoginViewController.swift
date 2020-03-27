@@ -10,21 +10,26 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+         addIndent(emailTextField)
+         addIndent(passwordTextField)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func loginClicked(_ sender: UIButton) {
+        successAlert()
     }
-    */
-
+    
+    func successAlert(){
+        let alert = UIAlertController(title: "You’re all set!", message: "Welcome to HackGrid 2020 💙", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Awesome!", style: .cancel) { action in
+            print("success")
+            self.performSegue(withIdentifier: "mainvc", sender: nil)
+        }
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
