@@ -11,6 +11,16 @@
 		5B8E5A332415539800066984 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A322415539800066984 /* notificationViewController.swift */; };
 		5B8E5A3C241592D000066984 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */; };
 		5B8E5A40241617C600066984 /* BeveragesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A3F241617C600066984 /* BeveragesViewController.swift */; };
+		5BC4B3AE242C6F9100F824B2 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC4B3AD242C6F9100F824B2 /* TimelineViewController.swift */; };
+		5BEED172242C95830095B037 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED171242C95830095B037 /* InformationViewController.swift */; };
+		5BEED174242CF9FC0095B037 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED173242CF9FB0095B037 /* ProfileViewController.swift */; };
+		5BEED178242CFF890095B037 /* RecentQueriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED177242CFF890095B037 /* RecentQueriesTableViewCell.swift */; };
+		5BEED17A242D45DF0095B037 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED179242D45DF0095B037 /* LoginViewController.swift */; };
+		5BEED17C242DBD630095B037 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED17B242DBD630095B037 /* SignUpViewController.swift */; };
+		5BEED17E242DC5CF0095B037 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED17D242DC5CF0095B037 /* ForgotPasswordViewController.swift */; };
+		5BEED180242DC8F80095B037 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED17F242DC8F80095B037 /* NewPasswordViewController.swift */; };
+		5BEED182242DE2310095B037 /* textField+indent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED181242DE2310095B037 /* textField+indent.swift */; };
+		5BEED184242E00160095B037 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEED183242E00160095B037 /* FAQTableViewCell.swift */; };
 		77CFC1232403A4EC00449969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1222403A4EC00449969 /* AppDelegate.swift */; };
 		77CFC1252403A4EC00449969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1242403A4EC00449969 /* ViewController.swift */; };
 		77CFC1282403A4EC00449969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CFC1262403A4EC00449969 /* Main.storyboard */; };
@@ -27,6 +37,24 @@
 		77CFC14E2403AD5800449969 /* statusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC14D2403AD5800449969 /* statusBarView.swift */; };
 		77CFC1502403E0AF00449969 /* AlmofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC14F2403E0AF00449969 /* AlmofireExtension.swift */; };
 		77CFC1522403E11700449969 /* HackgridLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFC1512403E11700449969 /* HackgridLogger.swift */; };
+		77D5EB01242F10F900806D26 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAEF242F10F800806D26 /* SF-Pro-Display-Regular.otf */; };
+		77D5EB02242F10F900806D26 /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF0242F10F800806D26 /* SF-Pro-Display-RegularItalic.otf */; };
+		77D5EB03242F10F900806D26 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF1242F10F800806D26 /* SF-Pro-Display-Heavy.otf */; };
+		77D5EB04242F10F900806D26 /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF2242F10F800806D26 /* SF-Pro-Display-UltralightItalic.otf */; };
+		77D5EB05242F10F900806D26 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF3242F10F800806D26 /* SF-Pro-Display-Semibold.otf */; };
+		77D5EB06242F10F900806D26 /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF4242F10F800806D26 /* SF-Pro-Display-Ultralight.otf */; };
+		77D5EB07242F10F900806D26 /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF5242F10F800806D26 /* SF-Pro-Display-ThinItalic.otf */; };
+		77D5EB08242F10F900806D26 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF6242F10F800806D26 /* SF-Pro-Display-Bold.otf */; };
+		77D5EB09242F10F900806D26 /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF7242F10F800806D26 /* SF-Pro-Display-MediumItalic.otf */; };
+		77D5EB0A242F10F900806D26 /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF8242F10F800806D26 /* SF-Pro-Display-SemiboldItalic.otf */; };
+		77D5EB0B242F10F900806D26 /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAF9242F10F800806D26 /* SF-Pro-Display-LightItalic.otf */; };
+		77D5EB0C242F10F900806D26 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAFA242F10F800806D26 /* SF-Pro-Display-Medium.otf */; };
+		77D5EB0D242F10F900806D26 /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAFB242F10F800806D26 /* SF-Pro-Display-BoldItalic.otf */; };
+		77D5EB0E242F10F900806D26 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAFC242F10F800806D26 /* SF-Pro-Display-Black.otf */; };
+		77D5EB0F242F10F900806D26 /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAFD242F10F900806D26 /* SF-Pro-Display-BlackItalic.otf */; };
+		77D5EB10242F10F900806D26 /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAFE242F10F900806D26 /* SF-Pro-Display-HeavyItalic.otf */; };
+		77D5EB11242F10F900806D26 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EAFF242F10F900806D26 /* SF-Pro-Display-Light.otf */; };
+		77D5EB12242F10F900806D26 /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77D5EB00242F10F900806D26 /* SF-Pro-Display-Thin.otf */; };
 		8B18285D1E165DD6E8B7475A /* Pods_Hackgrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7F8F42C4C0AB61D27261D3 /* Pods_Hackgrid.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +65,16 @@
 		5B8E5A322415539800066984 /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		5B8E5A3F241617C600066984 /* BeveragesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesViewController.swift; sourceTree = "<group>"; };
+		5BC4B3AD242C6F9100F824B2 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		5BEED171242C95830095B037 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		5BEED173242CF9FB0095B037 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5BEED177242CFF890095B037 /* RecentQueriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentQueriesTableViewCell.swift; sourceTree = "<group>"; };
+		5BEED179242D45DF0095B037 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5BEED17B242DBD630095B037 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5BEED17D242DC5CF0095B037 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		5BEED17F242DC8F80095B037 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		5BEED181242DE2310095B037 /* textField+indent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "textField+indent.swift"; sourceTree = "<group>"; };
+		5BEED183242E00160095B037 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
 		74A7B2C68F95F4865FF8CE33 /* Pods-Hackgrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackgrid.debug.xcconfig"; path = "Target Support Files/Pods-Hackgrid/Pods-Hackgrid.debug.xcconfig"; sourceTree = "<group>"; };
 		77CFC11F2403A4EC00449969 /* Hackgrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackgrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CFC1222403A4EC00449969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +94,24 @@
 		77CFC14D2403AD5800449969 /* statusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusBarView.swift; sourceTree = "<group>"; };
 		77CFC14F2403E0AF00449969 /* AlmofireExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmofireExtension.swift; sourceTree = "<group>"; };
 		77CFC1512403E11700449969 /* HackgridLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackgridLogger.swift; sourceTree = "<group>"; };
+		77D5EAEF242F10F800806D26 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		77D5EAF0242F10F800806D26 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		77D5EAF1242F10F800806D26 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		77D5EAF2242F10F800806D26 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		77D5EAF3242F10F800806D26 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		77D5EAF4242F10F800806D26 /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		77D5EAF5242F10F800806D26 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		77D5EAF6242F10F800806D26 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		77D5EAF7242F10F800806D26 /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		77D5EAF8242F10F800806D26 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		77D5EAF9242F10F800806D26 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		77D5EAFA242F10F800806D26 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		77D5EAFB242F10F800806D26 /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		77D5EAFC242F10F800806D26 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		77D5EAFD242F10F900806D26 /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		77D5EAFE242F10F900806D26 /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		77D5EAFF242F10F900806D26 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		77D5EB00242F10F900806D26 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +166,6 @@
 			children = (
 				77CFC1402403AB2400449969 /* Extensions */,
 				77CFC13D2403AAB700449969 /* Networking */,
-				77CFC1372403A9E400449969 /* Models */,
 				77CFC1342403A97000449969 /* Views */,
 				77CFC1352403A97E00449969 /* Controllers */,
 				77CFC13A2403AA8500449969 /* Services */,
@@ -127,6 +182,8 @@
 				77CFC1262403A4EC00449969 /* Main.storyboard */,
 				77CFC12B2403A4EF00449969 /* LaunchScreen.storyboard */,
 				5B8E5A3B241592D000066984 /* NotificationTableViewCell.swift */,
+				5BEED177242CFF890095B037 /* RecentQueriesTableViewCell.swift */,
+				5BEED183242E00160095B037 /* FAQTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,9 +192,16 @@
 			isa = PBXGroup;
 			children = (
 				77CFC1242403A4EC00449969 /* ViewController.swift */,
+				5BEED179242D45DF0095B037 /* LoginViewController.swift */,
+				5BEED17B242DBD630095B037 /* SignUpViewController.swift */,
+				5BEED17D242DC5CF0095B037 /* ForgotPasswordViewController.swift */,
+				5BEED17F242DC8F80095B037 /* NewPasswordViewController.swift */,
+				5BC4B3AD242C6F9100F824B2 /* TimelineViewController.swift */,
+				5B8E5A3F241617C600066984 /* BeveragesViewController.swift */,
 				5B8E5A302415318A00066984 /* QueriesViewController.swift */,
 				5B8E5A322415539800066984 /* notificationViewController.swift */,
-				5B8E5A3F241617C600066984 /* BeveragesViewController.swift */,
+				5BEED171242C95830095B037 /* InformationViewController.swift */,
+				5BEED173242CF9FB0095B037 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,13 +214,6 @@
 				77CFC1292403A4EF00449969 /* Assets.xcassets */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		77CFC1372403A9E400449969 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		77CFC13A2403AA8500449969 /* Services */ = {
@@ -192,6 +249,7 @@
 				77CFC1422403AB8A00449969 /* keyboard+Hide.swift */,
 				77CFC1442403AB9E00449969 /* checkNetwork.swift */,
 				77CFC1462403ABB900449969 /* custom+Navigation.swift */,
+				5BEED181242DE2310095B037 /* textField+indent.swift */,
 			);
 			path = "utils+Extensions";
 			sourceTree = "<group>";
@@ -217,6 +275,24 @@
 		77D6353924138187009DB468 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				77D5EAFC242F10F800806D26 /* SF-Pro-Display-Black.otf */,
+				77D5EAFD242F10F900806D26 /* SF-Pro-Display-BlackItalic.otf */,
+				77D5EAF6242F10F800806D26 /* SF-Pro-Display-Bold.otf */,
+				77D5EAFB242F10F800806D26 /* SF-Pro-Display-BoldItalic.otf */,
+				77D5EAF1242F10F800806D26 /* SF-Pro-Display-Heavy.otf */,
+				77D5EAFE242F10F900806D26 /* SF-Pro-Display-HeavyItalic.otf */,
+				77D5EAFF242F10F900806D26 /* SF-Pro-Display-Light.otf */,
+				77D5EAF9242F10F800806D26 /* SF-Pro-Display-LightItalic.otf */,
+				77D5EAFA242F10F800806D26 /* SF-Pro-Display-Medium.otf */,
+				77D5EAF7242F10F800806D26 /* SF-Pro-Display-MediumItalic.otf */,
+				77D5EAEF242F10F800806D26 /* SF-Pro-Display-Regular.otf */,
+				77D5EAF0242F10F800806D26 /* SF-Pro-Display-RegularItalic.otf */,
+				77D5EAF3242F10F800806D26 /* SF-Pro-Display-Semibold.otf */,
+				77D5EAF8242F10F800806D26 /* SF-Pro-Display-SemiboldItalic.otf */,
+				77D5EB00242F10F900806D26 /* SF-Pro-Display-Thin.otf */,
+				77D5EAF5242F10F800806D26 /* SF-Pro-Display-ThinItalic.otf */,
+				77D5EAF4242F10F800806D26 /* SF-Pro-Display-Ultralight.otf */,
+				77D5EAF2242F10F800806D26 /* SF-Pro-Display-UltralightItalic.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -281,9 +357,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D5EB05242F10F900806D26 /* SF-Pro-Display-Semibold.otf in Resources */,
+				77D5EB04242F10F900806D26 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				77D5EB0D242F10F900806D26 /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				77CFC12D2403A4EF00449969 /* LaunchScreen.storyboard in Resources */,
+				77D5EB10242F10F900806D26 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
+				77D5EB06242F10F900806D26 /* SF-Pro-Display-Ultralight.otf in Resources */,
+				77D5EB11242F10F900806D26 /* SF-Pro-Display-Light.otf in Resources */,
+				77D5EB0A242F10F900806D26 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				77D5EB09242F10F900806D26 /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				77D5EB0B242F10F900806D26 /* SF-Pro-Display-LightItalic.otf in Resources */,
 				77CFC12A2403A4EF00449969 /* Assets.xcassets in Resources */,
+				77D5EB01242F10F900806D26 /* SF-Pro-Display-Regular.otf in Resources */,
+				77D5EB0C242F10F900806D26 /* SF-Pro-Display-Medium.otf in Resources */,
+				77D5EB02242F10F900806D26 /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				77D5EB12242F10F900806D26 /* SF-Pro-Display-Thin.otf in Resources */,
 				77CFC1282403A4EC00449969 /* Main.storyboard in Resources */,
+				77D5EB0F242F10F900806D26 /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				77D5EB07242F10F900806D26 /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				77D5EB03242F10F900806D26 /* SF-Pro-Display-Heavy.otf in Resources */,
+				77D5EB0E242F10F900806D26 /* SF-Pro-Display-Black.otf in Resources */,
+				77D5EB08242F10F900806D26 /* SF-Pro-Display-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,12 +438,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				77CFC14C2403ABEE00449969 /* alert+Function.swift in Sources */,
+				5BEED172242C95830095B037 /* InformationViewController.swift in Sources */,
+				5BEED174242CF9FC0095B037 /* ProfileViewController.swift in Sources */,
 				77CFC14E2403AD5800449969 /* statusBarView.swift in Sources */,
 				5B8E5A332415539800066984 /* notificationViewController.swift in Sources */,
+				5BEED182242DE2310095B037 /* textField+indent.swift in Sources */,
 				77CFC1502403E0AF00449969 /* AlmofireExtension.swift in Sources */,
+				5BEED17C242DBD630095B037 /* SignUpViewController.swift in Sources */,
 				5B8E5A3C241592D000066984 /* NotificationTableViewCell.swift in Sources */,
+				5BEED17E242DC5CF0095B037 /* ForgotPasswordViewController.swift in Sources */,
+				5BC4B3AE242C6F9100F824B2 /* TimelineViewController.swift in Sources */,
+				5BEED184242E00160095B037 /* FAQTableViewCell.swift in Sources */,
 				5B8E5A312415318A00066984 /* QueriesViewController.swift in Sources */,
 				77CFC1472403ABB900449969 /* custom+Navigation.swift in Sources */,
+				5BEED17A242D45DF0095B037 /* LoginViewController.swift in Sources */,
 				77CFC1432403AB8A00449969 /* keyboard+Hide.swift in Sources */,
 				77CFC1252403A4EC00449969 /* ViewController.swift in Sources */,
 				77CFC1452403AB9E00449969 /* checkNetwork.swift in Sources */,
@@ -357,8 +459,10 @@
 				77CFC14A2403ABDC00449969 /* haptic+Feedback.swift in Sources */,
 				5B8E5A40241617C600066984 /* BeveragesViewController.swift in Sources */,
 				77CFC1232403A4EC00449969 /* AppDelegate.swift in Sources */,
+				5BEED178242CFF890095B037 /* RecentQueriesTableViewCell.swift in Sources */,
 				77CFC1522403E11700449969 /* HackgridLogger.swift in Sources */,
 				77CFC13C2403AA9600449969 /* Reachability.swift in Sources */,
+				5BEED180242DC8F80095B037 /* NewPasswordViewController.swift in Sources */,
 				77CFC1392403AA0C00449969 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
