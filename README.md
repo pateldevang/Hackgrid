@@ -1,20 +1,32 @@
-# Hackgrid
-This repo contains app made for ADG-VIT for hosting Hackgrid 2020.
+# <p align = "center"><img src = "Screenshots/logo.png" width = "35%" height = "35%"></p>
 
+### Hackgrid-2020 iOS Application
 
+### <ins>Introduction<ins>
 
-# Rules for the Repo:
+Hackgrid is 36-hour hackathon conducted by Apple developers group VIT. This app facilitates the participants with realtime information about the hack.
 
-1. No one changes the built version for the swift or any other built configurations like pods etc 🙏.
-2. No one pushes to the master directly 😬.
-3. Fork the repo and work on it and then create a pull request (Don't push to master directly🤗).
-4. Before starting any work make sure you pull the latest changes form master 👨‍💻.
+## Application Preview
 
-5. Most important "Happy Learning" 😇
+<p align = "center">
+<img src = "Screenshots/screenshots.png" width = "100%" height = "100%">
+</p>
 
+## Features
+- Realtime timeline of the hackathon
+- Food & Beverages information
+- FAQ section
 
+## Contributors
+* [Aaryan Kothari](https://github.com/aaryankotharii)
+* [Devang Patel](https://github.com/pateldevang)
 
+## License 
 
+Copyright (c) 2020 ADG-VIT
 
+Licensed under MIT License: https://opensource.org/licenses/MIT
+
+See [LICENSE](https://github.com/pateldevang/Hackgrid/blob/master/LICENSE) for more information
 
 
