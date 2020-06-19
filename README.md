@@ -24,7 +24,7 @@ Hackgrid is 36-hour hackathon conducted by Apple developers group VIT. This app 
 
 <hr>
 
-## Features
+## Application Features
 - Realtime timeline of the hackathon
 - Food & Beverages information
 - FAQ section
