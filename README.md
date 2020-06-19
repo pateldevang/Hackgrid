@@ -8,9 +8,21 @@ Hackgrid is 36-hour hackathon conducted by Apple developers group VIT. This app 
 
 ## Application Preview
 
-<p align = "center">
-<img src = "Screenshots/screenshots.png" width = "100%" height = "100%">
+<p align = "left">
+<img src = "Screenshots/screenshots.png" width = "75%" height = "75%">
 </p>
+
+
+<hr>
+<p align = "left">
+<img src = "Screenshots/ADG.png" width = "100%" height = "100%">
+</p>
+
+> Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+
+> You can Contact us at [adgvit.com](https://adgvit.com/contact.html)
+
+<hr>
 
 ## Features
 - Realtime timeline of the hackathon
